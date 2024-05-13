@@ -1,6 +1,5 @@
 body {
   font-family: "Source Sans Pro","Hiragino kaku Gothic ProN", Meiryo, Arial, sans-serif;
-  width: 1300px;
   margin: 0 auto 0 auto;
   padding: 0;
 }
@@ -9,18 +8,46 @@ h1 {
   padding: 0;
 }
 
+h2 {
+  font-size: 26px;
+  margin: 0;
+  text-align: center;
+  padding: 30px 40px;
+  letter-spacing: 3px;
+}
+
+h2::after {
+  content: url("/image/borderline.png");
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
 p {
   font-size: 16px;
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+
+article {
+  max-width: 1300px;
+  min-width: 1200px;
+  margin: 0 auto;
 }
 
 /* PC用のスタイル */
 /* ヘッダー */
+header {
+  min-width: 1200px;
+  background-color: #ffffff;
+}
 #header-logo {
   display: flex;
   justify-content: space-between;
-  margin: 0 30px 0 30px;
+  margin: 0 200px 0 200px;
   align-items: end;
 }
 
@@ -35,7 +62,7 @@ p {
 }
 
 .header-closed {
-  margin: 5px 0 20px 0;
+  margin: 5px 0 10px 0;
   color: red;
 }
 
@@ -43,37 +70,39 @@ p {
 #nav-pc {
   text-align: center;
   font-size: 16px;
-  padding-top: 15px;
+  padding: 10px 0 10px 0px;
+  background-color: rgb(70, 2, 2);
+  width: 100%;
 }
 
 /* ナビゲーションリンクの装飾 */
 #nav-pc > a {
   text-decoration: none;
   margin-left: 40px;
+  color: #ffffff;
 }
 
 #nav-pc > a:link {
-  color: #0d0d0d;
+  color: #ffffff;
 }
 
 #nav-pc > a:visited {
-  color: #0d0d0d;
+  color: #ffffff;
 }
-
 #nav-pc > a:hover {
-  color: #0d0d0d;
+  color: #ffffff;
   text-decoration: underline;
 }
 
 #nav-pc > a:active {
-  color: #0d0d0d;
+  color: #ffffff;
 }
 
 /* メインビジュアル */
 #main-visual {
   position: relative;
   height: 600px;
-  margin: 20px 0;
+  margin: 0;
 }
 
 #main-visual > img {
@@ -83,20 +112,74 @@ p {
 
 #main-message {
   position: absolute;
+  width: 40%;
+  height: 560px;
   font-size: 30px;
   padding: 20px;
   color: #ffffff;
   text-align: center;
-  top: 90px;
-  left: 20px;
+  top: 0;
+  left: 0;
   font-family: 'arial unicode ms';
   letter-spacing: 5px;
-  background-color: rgba(136, 65, 7, 0.6);
-  border-radius: 50px 50px;
+  background-color: rgba(187, 100, 29, 0.41);
+  border-radius: 0 0 500px 0;
 }
 
-#main-message > p {
-  padding: 20px 30px 10px 30px;
+#main-message_1 {
+  position: absolute;
+  top: 190px;
+  left: 86px;
+}
+
+#main-message_1 > p {
+  padding: 20px 10px 10px 10px;
   letter-spacing: 2px;
 }
+
+#information {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(255, 246, 242);
+}
+
+#infomation-cl {
+  width: 100%;
+  height: 600px;
+}
+
+#hours {
+  width: 50%;
+}
+
+#hours > h3 {
+  text-align: center;
+}
+
+.hyoubou {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+.hours-1 {
+  margin: 0 0 0 130px;
+}
+
+.hours-1 > span {
+  padding-left: 21px;
+  display: block;
+  line-height: 1.8;
+}
+
+.timetable ,th ,td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid;
+}
+
+
+
+
+
+
 
