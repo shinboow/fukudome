@@ -16,16 +16,19 @@ h2 {
   letter-spacing: 3px;
 }
 
-h2::after {
-  content: url("/image/borderline.png");
-  margin-left: 10px;
-}
-
 h3 {
   font-size: 22px;
   margin: 0;
 }
 
+h3::after {
+  content: url("/image/h3-border.png");
+  margin: 10px;
+}
+
+h4 {
+  margin: 10px 0px;
+}
 p {
   font-size: 16px;
   padding: 0;
@@ -47,12 +50,15 @@ header {
 #header-logo {
   display: flex;
   justify-content: space-between;
-  margin: 0 200px 0 200px;
+  margin: 10px 200px;
   align-items: end;
+  position: relative;
 }
 
 #logo img {
   width: 380px;
+  position: absolute;
+  bottom: 0px;
 }
 
 .header-tel {
@@ -90,8 +96,7 @@ header {
   color: #ffffff;
 }
 #nav-pc > a:hover {
-  color: #ffffff;
-  text-decoration: underline;
+  color:rgb(77, 243, 85);
 }
 
 #nav-pc > a:active {
@@ -137,22 +142,25 @@ header {
   letter-spacing: 2px;
 }
 
+/* お知らせ */
 #information {
   width: 100%;
   height: 300px;
   background-color: rgb(255, 246, 242);
 }
 
+/* 医院常用 */
 #infomation-cl {
   width: 100%;
-  height: 600px;
+  display: flex;
 }
 
-#hours {
+/* 診療時間 */
+#infomation-cl-left {
   width: 50%;
 }
 
-#hours > h3 {
+#infomation-cl-left > h3 {
   text-align: center;
 }
 
@@ -162,7 +170,8 @@ header {
 }
 
 .hours-1 {
-  margin: 0 0 0 130px;
+  margin: 20px 0;
+  padding: 0 80px;
 }
 
 .hours-1 > span {
@@ -171,11 +180,98 @@ header {
   line-height: 1.8;
 }
 
-.timetable ,th ,td {
-  text-align: center;
-  padding: 10px;
-  border: 1px solid;
+.timetable {
+  border-collapse: collapse;
 }
+
+.timetable > tbody > tr > th {
+  text-align: center;
+  padding: 10px 15px;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.timetable > tbody > tr > td {
+  text-align: center;
+  padding: 10px 15px;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.timetable th {
+  background-color: rgb(70, 2, 2);
+  color: #ffffff;
+}
+
+/* 医院概要 */
+.infomation-cl-right {
+  width: 50%;
+}
+
+.infomation-cl-right > h3 {
+  text-align: center;
+}
+
+.vision {
+  margin: 40px 0 30px 100px;
+  border-collapse: collapse;
+}
+
+.vision > tbody > tr > th {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(70, 2, 2);
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.vision > tbody > tr > td {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+/* アクセス */
+#access {
+  width: 100%;
+  height: 700px;
+}
+
+.access-way {
+  display: flex;
+  margin-top: 20px;
+}
+
+.access-way_1 {
+  display: flex;
+  width: 500px;
+  height: 100px;
+}
+
+.access-way_1 > img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.access-way_1 > span {
+  margin-left: 20px;
+  padding-top: 17px;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  height: 110px;
+  margin-top: 20px;
+  background-color: rgb(70, 2, 2);
+}
+
+.footer-logo {
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
 
 
 
