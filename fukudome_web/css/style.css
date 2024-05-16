@@ -149,6 +149,62 @@ header {
   background-color: rgb(255, 246, 242);
 }
 
+.news-list {
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+}
+
+.item a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding: 20px 20px;
+}
+
+.item:first-child a {
+  border-top: 1px solid rgb(182, 182, 182);
+}
+
+.item .date {
+  margin: 0;
+  min-width: 140px;
+  font-size: 16px;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+
+.item .category {
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+
+.item .category span {
+  background-color: #999;
+  width: 70px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.item .title {
+  margin: 0;
+  width: 100%;
+}
+
+.item a:hover .title {
+  color: rgb(77, 243, 85);
+}
+
 /* 医院常用 */
 #infomation-cl {
   width: 100%;
