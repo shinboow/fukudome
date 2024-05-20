@@ -22,11 +22,6 @@ h3 {
   margin: 0;
 }
 
-h3::after {
-  content: url("/image/h3-border.png");
-  margin: 10px;
-}
-
 h4 {
   margin: 10px 0px;
 }
@@ -427,6 +422,75 @@ footer {
 }
 /* 院長紹介 */
 
+#docter-file {
+  width: 1000px;
+  height: 390px;
+  margin: auto;
+}
 
+.docter-img {
+  float: right;
+  width: 450px;
+  height: 370px;
+  box-shadow: 10px 10px 0 rgb(182, 182, 182);
+  margin-left: 50px;
+}
 
+.docter-name {
+  font-size: 21px;
+}
+
+.docter-birth {
+  margin: 30px 0 70px 0;
+}
+
+/* 経歴・専門医・所属学会 */
+#career {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  background-color: rgb(255, 246, 242);
+}
+
+.career-h3 {
+  margin-top: 30px;
+}
+
+.career-left {
+  width: 350px;
+  margin:0 120px 30px 50px;
+}
+
+.career-dl > dt {
+  float: left;
+  line-height: 2;
+}
+
+.career-dl > dd {
+  margin-left: 100px;
+  line-height: 2;
+}
+
+.career-right {
+  width: 350px;
+}
+
+.career-right ul {
+  line-height: 2;
+}
+
+/* 求人募集 */
+.recruit-form {
+  width: 800px;
+  height: 200px;
+  margin: auto;
+  padding: 30px 50px;
+  background-color: rgb(255, 246, 242);
+}
+
+.recruit-form p {
+  font-size: 18px;
+  margin-top: 20px;
+}
 
