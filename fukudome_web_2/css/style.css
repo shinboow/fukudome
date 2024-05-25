@@ -12,7 +12,7 @@ h1 {
 
 h2 {
   font-size: 28px;
-  margin: 0;
+  margin: 20px 0 0 0;
   text-align: center;
   padding: 30px 40px;
   letter-spacing: 3px;
@@ -82,14 +82,17 @@ header {
 /* ナビゲーション */
 #nav-pc {
   text-align: center;
+  width: 700px;
+  margin: 0 auto;
   font-size: 16px;
   padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ナビゲーションリンクの装飾 */
 #nav-pc > a {
   text-decoration: none;
-  margin-left: 40px;
   color: #333;
 }
 
@@ -142,11 +145,21 @@ header {
   letter-spacing: 2px;
 }
 
+/* サブナビ */
+#nav-sub {
+  width: 900px;
+  margin: 10px auto;
+  padding-top: 10px;
+}
+
 /* お知らせ */
 #information {
-  width: 80%;
-  height: 300px;
+  width: 1200px;
+  height: 350px;
+  padding: 0 50px;
   margin: auto;
+  background-color: rgba(220, 250, 211, 0.932);
+  border-radius: 30px;
 }
 
 .news-list {
@@ -163,6 +176,7 @@ header {
   color: #333;
   border-bottom: 1px solid rgb(182, 182, 182);
   padding: 20px 20px;
+  background-color: #ffffff;
 }
 
 .item:first-child a {
@@ -205,29 +219,95 @@ header {
   color: rgb(55, 180, 61);
 }
 
-/* 医院常用 */
-#infomation-cl {
-  width: 100%;
+/* 診療案内 */
+#guide {
   display: flex;
+  width: 1000px;
+  margin: 50px auto 0px auto;
 }
 
-/* 診療時間 */
-#infomation-cl-left {
-  width: 50%;
+.guide_left {
+  width: 450px;
+  height: 430px;
+  position: relative;
 }
 
-#infomation-cl-left > h3 {
+.guide_right {
+  width: 450px;
+  height: 430px;
+  position: relative;
+  margin-left: 180px;
+}
+
+.guide_name {
+  position: absolute;
+  top: -60px;
+  left: -30px;
+  width: 450px;
+  height: 430px;
+  background-color:rgb(141, 233, 146) ;
+  font-size: 28px;
+  color: #ffffff;
+  z-index: 1;
   text-align: center;
 }
 
-.hyoubou {
+#guide img {
+  position: absolute;
+  width: 450px;
+  height: 430px;
+  box-shadow: 0 0 10px #999;
+  z-index: 2;
+}
+
+#guide_content {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  margin: 30px 0 10px 0;
+}
+
+.guide_content_left {
+  width: 450px;
+  margin-left: 38px;
+}
+
+.guide_content_right {
+  width: 450px;
+  padding-left: 138px;
+}
+
+.guide_content_p {
+  font-weight: bold;
+}
+
+/* 診療時間 */
+#guide_hours {
+  width: 1000px;
+  height: 320px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.guide_hours_left {
+  width: 495px;
+  height: 320px;
+}
+
+.guide_hours_right {
+  width: 495px;
+  height: 320px;
+  margin-left: 130px;
+}
+
+.hours-p {
   margin: 10px 0 0 0;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .hours-1 {
   margin: 20px 0;
-  padding: 0 80px;
 }
 
 .hours-1 > span {
@@ -242,18 +322,18 @@ header {
 
 .timetable > tbody > tr > th {
   text-align: center;
-  padding: 10px 15px;
+  padding: 10px 16px;
   border: 1px solid rgb(182, 182, 182);
 }
 
 .timetable > tbody > tr > td {
   text-align: center;
-  padding: 10px 15px;
+  padding: 10px 17px;
   border: 1px solid rgb(182, 182, 182);
 }
 
 .timetable th {
-  background-color: rgb(70, 2, 2);
+  background-color: rgb(55, 180, 61);
   color: #ffffff;
 }
 

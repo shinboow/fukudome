@@ -24,9 +24,9 @@
         <!-- PC用ナビ -->
         <nav id="nav-pc">
           <a href="index.html">ホーム</a>
-          <a href="introduction_1.html">医院紹介</a>
-          <a href="introduction_2.html">院長紹介</a>
-          <a href="recruit.html">求人募集</a>
+          <a href="index.html#guide">診療案内</a>
+          <a href="introduction.html">クリニックについて</a>
+          <a href="recruit.html">求人案内</a>
           <a href="index.html#access">アクセス</a>
         </nav>
     </header>
@@ -41,10 +41,21 @@
         </div>
         <img src="image/IMG_2750.jpg" alt="建物の風景">
       </section>
-      <nav>
 
-      </nav>
-
+      <!-- ナビサブ -->
+      <div id="nav-sub">
+        <nav id="nav-pc">
+          <a href="introduction.html" dlass="introduction"><img src="image/img006.png" alt="クリニックのアイコン">
+            <p class="nav-sub-p">クリニックについて</p>
+          </a>
+          <a href="introduction_2.html" class="introduction"><img src="image/img005.png" alt="聴診器のアイコン">
+            <p class="nav-sub-p">院長紹介</p>
+          </a>
+          <a href="introduction_2.html" class="introduction"><img src="image/img004.png" alt="問診表のアイコン">
+            <p class="nav-sub-p">クリニックの特徴</p>
+          </a>
+        </nav>
+      </div>
       <!-- お知らせ -->
       <section id="information">
         <h2>お知らせ</h2>
@@ -73,58 +84,84 @@
         </ul>
       </section>
 
-      <!-- 医院情報 -->
-      <h2>医院情報</h2>
-      <section id="infomation-cl">
+      <!-- 診療案内 -->
+      <h2>診療案内</h2>
+      <section>
+        <div id="guide">
+          <div class="guide_left">
+            <div class="guide_name">
+              <h4>腎臓内科</h4>
+            </div>
+            <img src="image/IMG_8.jpg" alt="透析室の風景">
+          </div>
+          <div class="guide_right">
+            <div class="guide_name">
+              <h4>人工透析内科</h4>
+            </div>
+            <img src="image/IMG_3.jpg" alt="透析室の風景">
+          </div>
+        </div>
+        <div id="guide_content">
+          <div class="guide_content_left">
+            <p class="guide_content_p">【診療内容】</p>
+            <p>蛋白尿、腎機能低下などの慢性腎臓病、その他腎臓病の評価・管理</p>
+          </div>
+          <div class="guide_content_right">
+            <p class="guide_content_p">【診療内容】</p>
+            <p>血液透析（HD）・血液透析濾過（オンラインHDFや間歇補充型HDF）</p>
+          </div>   
+        </div> 
+      </section>
 
         <!-- 診療時間 -->
-        <div id="infomation-cl-left">
-          <h3>診療時間</h3>
-          <div class="hours-1">
-            <p class="hyoubou">【腎臓内科】</p>
-            <table class="timetable">
-              <tbody>
-                <tr>
-                  <th>&nbsp;</th>
-                  <th>月</th>
-                  <th>火</th>
-                  <th>水</th>
-                  <th>木</th>
-                  <th>金</th>
-                  <th>土</th>
-                  <th>日</th>
-                  <th>祝</th>
-                </tr>
-                <tr>
-                  <td>午前</td>
-                  <td>●</td>
-                  <td>●</td>
-                  <td>●</td>
-                  <td>●</td>
-                  <td>●</td>
-                  <td>●</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>午後</td>
-                  <td>●</td>
-                  <td>-</td>
-                  <td>●</td>
-                  <td>-</td>
-                  <td>●</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-              </tbody>
-            </table>
-            <span>午前:9:00～12:00<br>
-              午後:14:00～17:00</span>
-          </div>
-          <div id="hours">
+        <section id="guide_hours">
+          <div class="guide_hours_left">
             <div class="hours-1">
-              <p class="hyoubou">【人工透析内科】</p>
+              <p class="hours-p">【腎臓内科】</p>
+              <table class="timetable">
+                <tbody>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>月</th>
+                    <th>火</th>
+                    <th>水</th>
+                    <th>木</th>
+                    <th>金</th>
+                    <th>土</th>
+                    <th>日</th>
+                    <th>祝</th>
+                  </tr>
+                  <tr>
+                    <td>午前</td>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>午後</td>
+                    <td>●</td>
+                    <td>-</td>
+                    <td>●</td>
+                    <td>-</td>
+                    <td>●</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span>午前:9:00～12:00<br>
+                午後:14:00～17:00</span>
+            </div>
+          </div>
+          <div class="guide_hours_right">
+            <div class="hours-1">
+              <p class="hours-p">【人工透析内科】</p>
               <table class="timetable">
                 <tbody>
                   <tr>
@@ -166,7 +203,8 @@
                 午後:15:00～21:00</span>
             </div>
           </div>
-        </div>
+        </section>
+
         <!-- 概要 -->
         <div class="infomation-cl-right">
           <h3>医院概要</h3>
