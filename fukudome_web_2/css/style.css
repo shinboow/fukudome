@@ -502,63 +502,98 @@ footer {
   text-align: right;
   font-size: 12px;
 }
-
+/* introduction.html */
 /* クリニックについて */
 .submain-image {
   display: flex;
   position: relative;
   height: 355px;
+  z-index: 1;
 }
-.submain-image_inner {
-  width: 55%;
-  height: 300px;
-  background-color: rgb(108, 199, 112);
+
+.submain-image > p {
+  color: #ffffff;
   position: absolute;
-  left: 0px;
-  border-radius: 0 0 320px 0;
+  top: 200px;
+  left: 290px;
   z-index: 2;
 }
 
-.submain-image_inner > div {
-  color: #ffffff;
-  position: absolute;
-  top: 180px;
-  left: 229px;
-}
-
-.submain-image_inner > h1 {
-  top: 110px;
-  left: 225px;
+.submain-image > h1 {
+  top: 130px;
+  left: 110px;
   color: #ffffff;
   font-size: 45px;
   position: absolute;
+  z-index: 2;
+
 }
 
 .submain-image > img {
-  width: 55%;
+  width: 100%;
   right: 0px;
   height: 350px;
   position: absolute;
-  border-radius: 320px 0 0 0;
-  z-index: 1;
 }
 /* クリニック概要 */
-#feature {
+#outline {
  width: 1300px;
  margin: auto;
 }
 
-.feature_img {
+.outline_img {
   display: flex;
   justify-content: center;
 }
 
-.feature_img img {
+.outline_img img {
   width: 350px;
   height: 300px;
   margin: 10px 0 30px 20px;
   border-radius: 30px;
 }
+
+#outline {
+  width: 1300px;
+  margin: auto;
+}
+
+.outline_table {
+  width: 1050px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.outline_table > tbody > tr > th {
+  width: 100px;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(70, 2, 2);
+  text-align: center;
+  height: 60px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.outline_table > tbody > tr > td {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 医院の特徴 */
 #feature > div > div {
   width: 780px;
