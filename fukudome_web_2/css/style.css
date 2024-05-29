@@ -481,6 +481,25 @@ header {
   padding-top: 17px;
 }
 
+/* 広告 */
+#banner {
+  width: 1300px;
+  height: 180px;
+  text-align: center;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+#banner img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 10px 40px;
+}
+
+
+
 /* フッター */
 footer {
   width: 100%;
@@ -785,7 +804,6 @@ footer {
 .infomation_category {
   width: 80px;
   background-color: rgb(141, 233, 146);
-  color: #ffffff;
   margin: 15px;
   border-radius: 10px;
   text-align: justify;
@@ -803,6 +821,23 @@ footer {
   padding: 0 50px;
 }
 
-#main_infomation > img {
-  position: absolute;
+#main_infomation  img {
+  width: 60px;
+  height: 60px;
 }
+
+.information_link {
+display: inline-block;
+ position: absolute;
+ width: 130px;
+ height: 35px;
+ background-color: rgb(154, 151, 151);
+ color: #ffffff;
+ border: 2px double rgb(70, 2, 2);
+ border-radius: 5px;
+ text-align: center;
+ padding-top: 12px;
+ font-weight: bold;
+ top: 240px;
+ right: 0;
+ }
