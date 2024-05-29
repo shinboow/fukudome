@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <title>医院紹介-宮崎市の腎臓内科・人工透析内科</title>
   <meta charset="UTF-8">
@@ -45,7 +45,7 @@
     <section id="outline">
       <h2>クリニック概要</h2>
       <div class="outline_img">
-        <img src="image/img_about01.jpg" alt="クリニックの外観">
+        <img src="image/img_about.jpg" alt="クリニックの外観">
         <img src="image/img_about02.jpg" alt="受付の写真">
         <img src="image/img_about03.jpg" alt="透析室の写真">
       </div>
@@ -54,6 +54,22 @@
           <tr>
             <th>名称</th>
             <td>医療法人 慶仁会 ふくどめクリニック</td>
+          </tr>
+          <tr>
+            <th>開院</th>
+            <td>2015年12月1日</td>
+          </tr>
+          <tr>
+            <th>院長</th>
+            <td>福留 慶一</td>
+          </tr>
+          <tr>
+            <th>副院長</th>
+            <td>福留 理恵</td>
+          </tr>
+          <tr>
+            <th>診療科目</th>
+            <td>腎臓内科・人工透析内科</td>
           </tr>
           <tr>
             <th>所在地</th>
@@ -66,40 +82,73 @@
             0985-41-7701（FAX）</td>
           </tr>
           <tr>
-            <th>診療科目</th>
-            <td>腎臓内科・人工透析内科</td>
+            <th>透析ベット数</th>
+            <td>39床</td>
           </tr>
         </tbody>
        </table>
     </section>
 
+    <!-- 院長紹介 -->
+    <section id="docter">
+      <h2>院長紹介</h2>
+      <div id="docter-file">
+        <img class="docter-img" src="image/img_doctor.jpg" alt="院長の画像">
+        <h4 class="docter-name">院長 福留 慶一</h4>
+        <p class="docter-birth">昭和42年5月7日生まれ 宮崎市出身</p>
+        <p class="docter-message">患者様一人ひとりに最適な医療を提供し、ご希望に沿った治療を第一に考えます。</p>
+      </div>
 
+      <!-- 経歴・専門医・所属学会 -->
+      <div id="career">
+        <div class="career-left">
+          <h3 class="career-h3">経歴</h3>
+          <dl class="career-dl">
+            <dt>1986年</dt>
+            <dd>宮崎西高校卒</dd>
+            <dt>1992年</dt>
+            <dd>宮崎医科大学卒（現宮崎大学）
+              <br>宮崎大学医学部付属病院
+              <br>県立延岡病院
+              <br>宮崎市古賀総合病院
+              <br>宮崎市宮崎江南病院
+              <br>日向市千代田病院等に勤務
+            </dd>
+              <dt>2015年</dt>
+              <dd>ふくどめクリニック開院</dd>
+          </dl>
+        </div>
+        <div class="career-right">
+          <div class="career-right-1">
+            <h3 class="career-h3">学位・専門医</h3>
+            <ul>
+              <li>医学博士</li>
+              <li>日本透析医学会 透析専門医</li>
+              <li>日本内科学会 総合内科専門医</li>
+            </ul>
+          </div>
+          <div class="career-right-2">
+            <h3 class="career-h3">所属学会</h3>
+            <ul>
+              <li>日本透析医学会</li>
+              <li>日本腎臓学会</li>
+              <li>日本内科学会</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <section id="feature">
+      <h2>クリニックの特徴</h2>
       <div>
-        <div>
+        <div class="feature_left">
           <img class="feature-img-left" src="image/hospital_out01_day.jpg" alt="関連施設の建物の画像">
           <span class="feature-number">01</span>
           <h3 class="feature-h3">関連医療機関との連携</h3>
           <p class="feature-p">県内の基幹病院をはじめ、多くの医療施設との緊密な連携を行っています。</p>
         </div>
-        <div>
+        <div class="feature_right">
           <img class="feature-img-right" src="image/IMG_3.jpg" alt="透析室の風景">
           <span class="feature-number">02</span>
           <h3 class="feature-h3">透析ベット 39床</h3>
@@ -107,7 +156,7 @@
         </div>
       </div>
       <div>
-        <div>
+        <div class="feature_left">
           <img class="feature-img-left" src="image/R.jpg" alt="関連施設の建物の画像">
           <span class="feature-number">03</span>
           <h3 class="feature-h3">フットケア</h3>
@@ -115,7 +164,7 @@
             <br>当院ではフットケアチームが月１回、フットケアを実施しています。
           </p>
         </div>
-        <div>
+        <div class="feature_right">
           <img class="feature-img-right" src="image/OIP.jpg" alt="水の写真">
           <span class="feature-number">04</span>
           <h3 class="feature-h3">清浄化された透析液</h3>
@@ -123,13 +172,13 @@
         </div>
       </div>
       <div>
-        <div>
+        <div class="feature_left">
           <img class="feature-img-left" src="image/img_about04.jpg" alt="透析装置の写真">
           <span class="feature-number">05</span>
           <h3 class="feature-h3">オンラインHDF</h3>
           <p class="feature-p">透析低血圧となる「透析困難症」や、透析治療を長期間行っている患者さんに起きる「透析アミロイドーシス」への効果が期待されるオンラインHDFを行っています。</p>
         </div>
-        <div>
+        <div class="feature_right">
           <img class="feature-img-right" src="image/IMG_3287.jpg" alt="ロッカーの風景">
           <span class="feature-number">06</span>
           <h3 class="feature-h3">透析患者さん専用ロッカー</h3>
@@ -137,31 +186,32 @@
         </div>
       </div>
       <div>
-        <div>
+        <div class="feature_left">
           <img class="feature-img-left" src="image/IMG_3285.jpg" alt="透析室の患者さん用テレビ">
           <span class="feature-number">07</span>
           <h3 class="feature-h3">各ベットにテレビ設置（無料）</h3>
           <p class="feature-p">透析治療時間が少しでも負担とならないように、各ベットに患者さん専用のテレビが設置されています。</p>
         </div>
-        <div>
+        <div class="feature_right">
           <img class="feature-img-right" src="image/img_about05.jpg" alt="透析室の風景">
           <span class="feature-number">08</span>
           <h3 class="feature-h3">送迎サービス（無料）</h3>
           <p class="feature-p">当院への通院が困難な際は、無料で送迎を行っています。</p>
         </div>
       </div>
-    </section>
+    </section>  
   </article>
 
   <footer>
     <nav id="nav-pc">
       <a href="index.html">ホーム</a>
-      <a href="introduction_1.html">医院紹介</a>
-      <a href="introduction_2.html">院長紹介</a>
+      <a href="index.html#examination_guide">診療案内</a>
+      <a href="introduction.html">クリニックについて</a>
       <a href="recruit.html">求人募集</a>
       <a href="index.html#access">アクセス</a>
     </nav>
     <p class="footer-logo">ふくどめクリニック</p>
+    <p class="copyright">© 2024 ふくどめクリニック</p>
   </footer>
 </body>
 </html>

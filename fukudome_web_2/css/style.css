@@ -485,9 +485,10 @@ header {
 footer {
   width: 100%;
   min-width: 1300px;
-  height: 85px;
+  height: 100px;
   margin-top: 20px;
-  background-color: #ffffff
+  background-color: rgb(245, 242, 242);
+  padding-top: 10px;
 }
 
 .footer-logo {
@@ -515,13 +516,13 @@ footer {
   color: #ffffff;
   position: absolute;
   top: 200px;
-  left: 290px;
+  left: 135px;
   z-index: 2;
 }
 
 .submain-image > h1 {
   top: 130px;
-  left: 110px;
+  left: 130px;
   color: #ffffff;
   font-size: 45px;
   position: absolute;
@@ -580,25 +581,85 @@ footer {
   height: 60px;
 }
 
+/* 院長紹介 */
+#docter {
+  margin: 20px 0;
+}
 
+#docter-file {
+  width: 930px;
+  height: 390px;
+  margin: 0 auto 40px auto;
+}
 
+.docter-img {
+  float: right;
+  width: 450px;
+  height: 370px;
+  box-shadow: 10px 10px 0 rgb(182, 182, 182);
+  margin-left: 50px;
+}
 
+.docter-name {
+  font-size: 21px;
+}
 
+.docter-birth {
+  margin: 30px 0 70px 0;
+}
 
+/* 経歴・専門医・所属学会 */
+#career {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(220, 250, 211, 0.932);
+}
 
+.career-h3 {
+  margin-top: 30px;
+}
 
+.career-left {
+  width: 350px;
+  margin:0 120px 30px 50px;
+}
 
+.career-dl > dt {
+  float: left;
+  line-height: 2;
+}
 
+.career-dl > dd {
+  margin-left: 100px;
+  line-height: 2;
+}
 
+.career-right {
+  width: 350px;
+}
 
-
-
+.career-right ul {
+  line-height: 2;
+}
 
 /* 医院の特徴 */
-#feature > div > div {
+
+#feature > div {
+  width: 1100px;
+  margin: auto;
+}
+.feature_left {
   width: 780px;
   height: 275px;
-  margin: auto;
+  margin-right:auto;
+}
+
+.feature_right {
+  width: 780px;
+  height: 275px;
+  margin-left:auto;
 }
 
 .feature-img-left {
@@ -650,72 +711,14 @@ footer {
   font-size: 21px;
   margin: 10px 0px;
 }
-/* 院長紹介 */
 
-#docter-file {
-  width: 1000px;
-  height: 390px;
-  margin: auto;
-}
-
-.docter-img {
-  float: right;
-  width: 450px;
-  height: 370px;
-  box-shadow: 10px 10px 0 rgb(182, 182, 182);
-  margin-left: 50px;
-}
-
-.docter-name {
-  font-size: 21px;
-}
-
-.docter-birth {
-  margin: 30px 0 70px 0;
-}
-
-/* 経歴・専門医・所属学会 */
-#career {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  width: 100%;
-  background-color: rgb(255, 246, 242);
-}
-
-.career-h3 {
-  margin-top: 30px;
-}
-
-.career-left {
-  width: 350px;
-  margin:0 120px 30px 50px;
-}
-
-.career-dl > dt {
-  float: left;
-  line-height: 2;
-}
-
-.career-dl > dd {
-  margin-left: 100px;
-  line-height: 2;
-}
-
-.career-right {
-  width: 350px;
-}
-
-.career-right ul {
-  line-height: 2;
-}
-
-/* 求人募集 */
+/* 求人案内ページ */
 .recruit-form {
   width: 90%;
   height: 300px;
   margin: auto;
-  background-color: rgb(255, 246, 242);
+  background-color: rgba(220, 250, 211, 0.932);
+  border-radius: 20px;
 }
 
 .recruit-form > p {
@@ -762,4 +765,44 @@ footer {
 
 .contact-tel {
   font-weight: bold;
+}
+
+/* お知らせページ */
+#main_infomation {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+
+.infomation_main {
+  margin-top: 50px;
+}
+.infomation_main p {
+ display: inline-block;
+}
+
+.infomation_category {
+  width: 80px;
+  background-color: rgb(141, 233, 146);
+  color: #ffffff;
+  margin: 15px;
+  border-radius: 10px;
+  text-align: justify;
+  text-align-last: justify;
+  padding: 5px 10px;
+}
+
+.infomation_title {
+  font-size: 28px;
+  margin: 0 0 30px 0;
+  padding: 0 50px;
+}
+
+#main_infomation > p {
+  padding: 0 50px;
+}
+
+#main_infomation > img {
+  position: absolute;
 }
