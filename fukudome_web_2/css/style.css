@@ -82,7 +82,7 @@ header {
 /* ナビゲーション */
 #nav-pc {
   text-align: center;
-  width: 700px;
+  width: 760px;
   margin: 0 auto;
   font-size: 16px;
   padding-bottom: 15px;
@@ -155,7 +155,7 @@ header {
 /* お知らせ */
 #information {
   width: 1200px;
-  height: 350px;
+  height: 560px;
   padding: 0 50px;
   margin: auto;
   background-color: rgba(220, 250, 211, 0.932);
@@ -484,16 +484,19 @@ header {
 /* 広告 */
 #banner {
   width: 1300px;
-  height: 180px;
+  height: 190px;
   text-align: center;
   margin: 10px auto;
   display: flex;
   justify-content: center;
 }
 
+#banner div {
+  height: 190px;
+}
 #banner img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 10px;
   margin: 10px 40px;
 }
@@ -788,9 +791,8 @@ footer {
 
 /* お知らせページ */
 #main_infomation {
-  width: 800px;
-  height: 400px;
-  margin: auto;
+  width: 900px;
+  margin: 0 auto 100px auto;
   position: relative;
 }
 
@@ -827,17 +829,23 @@ footer {
 }
 
 .information_link {
-display: inline-block;
- position: absolute;
- width: 130px;
- height: 35px;
- background-color: rgb(154, 151, 151);
- color: #ffffff;
- border: 2px double rgb(70, 2, 2);
- border-radius: 5px;
- text-align: center;
- padding-top: 12px;
- font-weight: bold;
- top: 240px;
- right: 0;
- }
+  display: inline-block;
+   position: absolute;
+   width: 160px;
+   height: 35px;
+   background-color: rgb(154, 151, 151);
+   color: #ffffff;
+   border: 2px double rgb(70, 2, 2);
+   border-radius: 5px;
+   text-align: center;
+   padding-top: 12px;
+   bottom: 0;
+   right: 0;
+}
+/* お知らせ・防災情報のリンク */
+.record_link {
+  display: block;
+  margin: 30px 0 0 80px;
+}
+
+
