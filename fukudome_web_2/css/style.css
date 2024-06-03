@@ -1,9 +1,8 @@
 body {
   font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
-  margin: 0 auto 0 auto;
-  padding: 0;
-  min-width: 1200px;
-  max-width: 1300px;
+
+  max-width: 1500px;
+  min-width: 1230px;
 }
 h1 {
   margin:  0;
@@ -33,7 +32,7 @@ p {
 }
 
 article {
-  margin: auto;
+  width: 100%;
 }
 
 /* PC用のスタイル */
@@ -113,14 +112,15 @@ header {
 
 /* メインビジュアル */
 #main-visual {
+  width: 100%;
   position: relative;
   height: 700px;
-  margin: 0;
 }
 
-#main-visual > img {
+#main-visual img {
   width: 100%;
   height: 700px;
+  margin: auto;
 }
 
 #main-message {
@@ -152,11 +152,10 @@ header {
   padding-top: 10px;
 }
 
-/* お知らせ・ご連絡 */
+/* お知らせ */
 #information {
-  width: 1200px;
-  min-width: 1100px;
-  height: 560px;
+  width: 90%;
+  height: 500px;
   padding: 0 50px;
   margin: auto;
   background-color: rgba(220, 250, 211, 0.932);
@@ -222,7 +221,7 @@ header {
 
 /* 診療案内 */
 #examination_guide {
-  width: 1300px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -309,7 +308,7 @@ header {
 
 /* 診療時間 */
 #examination_hours {
-  width: 1300px;
+  width: 90%;
   height: 320px;
   margin: 0 auto;
 }
@@ -319,12 +318,12 @@ header {
 }
 
 .guide_hours_left {
-  width: 475px;
+  width: 478px;
   height: 320px;
 }
 
 .guide_hours_right {
-  width: 475px;
+  width: 478px;
   height: 320px;
   margin-left: 150px;
 }
@@ -374,7 +373,7 @@ header {
 /* 受診される方へ */
 
 #consult {
-  width: 1300px;
+  width: 90%;
   height: 400px;
   margin: 0 auto;
 }
@@ -408,19 +407,18 @@ header {
 /* 医院概要 */
 #access-information {
   width: 100%;
-  min-width: 1300px;
-  height: 640px;
+  height: 600px;
   background-color: rgba(220, 250, 211, 0.932);
   margin-top: 30px;
 }
 
 #access-information > div {
   display: flex;
-  justify-content: center;
+  margin: auto;
+  width: 1110px;
 }
 .infomation-cl {
-  width: 420px;
-  margin:5px 0 0 0;
+  margin-top: 5px;
 }
 
 .vision {
@@ -455,9 +453,8 @@ header {
 
 /* アクセス */
 #access {
-  width: 650px;
+  width: 100%;
   height: 450px;
-  margin-left: 80px;
 }
 
 .access-way {
@@ -468,7 +465,7 @@ header {
   display: flex;
   width: 500px;
   height: 100px;
-  margin: 0;
+  margin: 30px 0 0 0;
 }
 
 .access-way_1 > img {
@@ -484,7 +481,7 @@ header {
 
 /* 広告 */
 #banner {
-  width: 1300px;
+  width: 90%;
   height: 190px;
   text-align: center;
   margin: 10px auto;
@@ -507,7 +504,6 @@ header {
 /* フッター */
 footer {
   width: 100%;
-  min-width: 1300px;
   height: 100px;
   margin-top: 20px;
   background-color: rgb(245, 242, 242);
@@ -561,7 +557,7 @@ footer {
 }
 /* クリニック概要 */
 #outline {
- width: 1300px;
+ width: 100%;
  margin: auto;
 }
 
@@ -631,6 +627,10 @@ footer {
   margin: 30px 0 70px 0;
 }
 
+.docter-from {
+  margin-left: 30px;
+}
+
 /* 経歴・専門医・所属学会 */
 #career {
   display: flex;
@@ -645,7 +645,7 @@ footer {
 }
 
 .career-left {
-  width: 350px;
+  width: 380px;
   margin:0 120px 30px 50px;
 }
 
@@ -738,7 +738,7 @@ footer {
 /* 求人案内ページ */
 .recruit-form {
   width: 90%;
-  height: 300px;
+  height: 200px;
   margin: auto;
   background-color: rgba(220, 250, 211, 0.932);
   border-radius: 20px;
@@ -746,9 +746,8 @@ footer {
 
 .recruit-form > p {
   font-size: 18px;
-  padding-top: 20px;
   text-align: center;
-  padding: 30px 0 20px 0;
+  padding: 60px 0 20px 0;
 }
 
 .recruit-item {
@@ -792,7 +791,8 @@ footer {
 
 /* お知らせページ */
 #main_infomation {
-  width: 900px;
+  width: 65%;
+  min-height: 400px;
   margin: 0 auto 100px auto;
   position: relative;
 }
@@ -849,7 +849,4 @@ footer {
   margin: 30px 0 0 80px;
 }
 
-/* お知らせ・個人情報 */
-.information_li {
-  margin: 0 0 0 50px;
-}
+
