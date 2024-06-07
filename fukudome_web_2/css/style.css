@@ -1,8 +1,7 @@
+
+
 body {
   font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
-  margin: 0 auto 0 auto;
-  max-width: 1500px;
-  min-width: 1230px;
 }
 h1 {
   margin:  0;
@@ -36,7 +35,13 @@ article {
 }
 
 /* PC用のスタイル */
-/* ヘッダー */
+@media screen and ( min-width: 768px) {
+  
+body {
+  max-width: 1500px;
+  min-width: 1230px;
+  margin: 0 auto 0 auto;
+}
 header {
   background-color: #ffffff;
 }
@@ -110,6 +115,15 @@ header {
   color: #333;
 }
 
+/* PCページ用　SPナビ非表示 */
+#nav-sp {
+  display: none;
+}
+
+#menu-sp {
+  display: none;
+}
+
 /* トップページ */
 /* メインビジュアル */
 #main-visual {
@@ -152,9 +166,44 @@ header {
   padding-top: 10px;
 }
 
+#sub-nav {
+  text-align: center;
+  width: 760px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction_3 img {
+  padding-top: 7px;
+}
+
+/* サブナビゲーションリンクの装飾 */
+#sub-nav > a {
+  text-decoration: none;
+  color: #333;
+}
+
+#sub-nav > a:link {
+  color: #333;
+}
+
+#sub-nav > a:visited {
+  color: #333;
+}
+#sub-nav > a:hover {
+  color:rgb(55, 180, 61);
+}
+
+#sub-nav > a:active {
+  color: #333;
+}
+
 /* お知らせ */
 #information {
-  width: 90%;
+  width: 80%;
   height: 500px;
   padding: 0 50px;
   margin: auto;
@@ -222,24 +271,25 @@ header {
 /* 診療案内 */
 #examination_guide {
   width: 90%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 #guide {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  height: 560px;
 }
 
 .guide_left {
   width: 450px;
-  height: 430px;
+  height: 550px;
   position: relative;
 }
 
 .guide_right {
   width: 450px;
-  height: 430px;
+  height: 550px;
   margin-left: 150px;
   position: relative;
 }
@@ -285,21 +335,14 @@ header {
   z-index: 2;
 }
 
-#guide_content {
-  display: flex;
-  justify-content: center;
-  height: 80px;
-  margin: 50px 0 10px 0;
-}
-
 .guide_content_left {
-  width: 450px;
-  padding-right: 20px;
+  position: absolute;
+  bottom: 0;
 }
 
 .guide_content_right {
-  width: 450px;
-  margin-left: 150px;
+  position: absolute;
+  bottom: 0;
 }
 
 .guide_content_p {
@@ -309,22 +352,22 @@ header {
 /* 診療時間 */
 #examination_hours {
   width: 90%;
-  height: 320px;
   margin: 0 auto;
 }
 #guide_hours {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .guide_hours_left {
   width: 478px;
-  height: 320px;
+  height: 280px;
 }
 
 .guide_hours_right {
   width: 478px;
-  height: 320px;
+  height: 280px;
   margin-left: 150px;
 }
 
@@ -379,7 +422,7 @@ header {
 }
 .initial {
   display: flex;
-  justify-content:center
+  justify-content:center;
 }
 
 .initial_left {
@@ -407,9 +450,9 @@ header {
 /* 医院概要 */
 #access-information {
   width: 100%;
-  height: 600px;
+  height: 550px;
   background-color: rgba(220, 250, 211, 0.932);
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 #access-information > div {
@@ -455,6 +498,7 @@ header {
 #access {
   width: 100%;
   height: 450px;
+  margin-top: 30px;
 }
 
 .access-way {
@@ -505,7 +549,6 @@ header {
 footer {
   width: 100%;
   height: 100px;
-  margin-top: 20px;
   background-color: rgb(245, 242, 242);
   padding-top: 10px;
 }
@@ -848,5 +891,369 @@ footer {
   display: block;
   margin: 30px 0 0 80px;
 }
+}
 
+/* SP用スタイル */
+/* トップページ */
+@media screen and (max-width:767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  /* PCナビ非表示 */
+  #nav-pc {
+    display: none;
+  }
+
+  #menu-sp {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #menu-sp {
+    width: 11%;
+  }
+
+  #header-logo img {
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  #logo-sp img {
+    display: block;
+    width: 80%;
+    margin: 60px auto;
+  }
+
+  #header-logo > span {
+    display: none;
+  }
+
+  #header-log0 > p {
+    display: none;
+  }
+  #close {
+    position: absolute;
+    width: 10%;
+    top: 10px;
+    right: 10px;
+  }
+  
+  /* SP用ナビゲーションの切り替え */
+  h2 {
+    padding: 20px 20px 10px 20px;
+  }
+
+  #nav-sp {
+    background-color: rgb(70, 2, 2);
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+  }
+
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
+  
+  #nav-sp > a {
+    display: block;
+  }
+  #nav-sp > a:link {
+    color: #ffffff;
+  }
+  #nav-sp > a:visited {
+    color: #ffffff;
+  }
+  #nav-sp > a:hover {
+    color: rgb(141, 233, 146);
+    text-decoration: underline;
+  }
+  #nav-sp > a:active {
+    color: #ffffff;
+  }
+  #nav-sp > .menu {
+    text-decoration: none;
+    display: block;
+    margin: 0 30px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("/image/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  /* メインビジュアル */
+  #main-visual {
+    position: relative;
+  }
+
+  #main-message {
+    position: absolute;
+  }
+
+  #main-visual > img {
+    width: 100%;
+    height: 300px;
+  }
+
+  #main-message_1 {
+    width: 300px;
+    background-color: rgba(64, 97, 241, 0.315);
+    color: #ffffff;
+    height: 270px;
+    border-radius: 0 0 300px 0;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  /* お知らせ */
+  #information {
+    width: 80%;
+    padding: 0 20px 30px 20px;
+    margin: 30px auto 10px auto;
+    background-color: rgba(220, 250, 211, 0.932);
+    border-radius: 30px;
+  }
+  
+  .news-list {
+    list-style: none outside;
+    margin: auto;
+    padding: 0;
+  }
+  
+  .item a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding: 20px 20px;
+    background-color: #ffffff;
+  }
+  
+  .item:first-child a {
+    border-top: 1px solid rgb(182, 182, 182);
+  }
+  
+  .item .date {
+    margin: 0;
+    font-size: 16px;
+    color: #999;
+    padding: 0 20px 0 0;
+  }
+  
+  .item .category {
+    margin: 0 0 15px 0;
+    padding: 0 20px 0 0;
+  }
+  
+  .item .category span {
+    background-color: #999;
+    width: 60px;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: justify;
+    text-align-last: justify;
+  }
+  
+  .item .title {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .item a:hover .title {
+    color: rgb(55, 180, 61);
+  }
+
+  /* 診療案内 */
+#examination_guide {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.guide_left {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  background-color: rgb(55, 180, 61);
+  text-align: center;
+}
+
+.guide_right {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  background-color: rgb(55, 180, 61);
+  text-align: center;
+}
+
+.guide_name_left {
+  width: 100%;
+  padding-top: 10px;
+  margin: auto;
+  font-size: 24px;
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
+}
+
+.guide_name_right {
+  width: 100%;
+  padding-top: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
+}
+
+.guide_name h4 {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+#guide img {
+  width: 90%;
+  height: 350px;
+  margin: auto;
+  box-shadow: 0 0 10px #999;
+  z-index: 2;
+  border-radius: 30px;
+}
+
+.guide_content_left {
+  margin: 15px 0;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+.guide_content_right {
+  margin: 15px 0;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+.guide_content_p {
+  font-weight: bold;
+}
+
+/* 診療時間 */
+#examination_hours {
+  margin: 0 auto;
+  width: 100%;
+}
+#guide_hours {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hours-p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hours-1 {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.hours-1 > span {
+  padding-left: 21px;
+  display: block;
+  line-height: 1.8;
+}
+
+.timetable {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.timetable > tbody > tr > th {
+  text-align: center;
+  padding: 0;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.timetable > tbody > tr > td {
+  text-align: center;
+  padding: 0 12px;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.timetable th {
+  background-color: rgb(55, 180, 61);
+  color: #ffffff;
+}
+.reception {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+  }
+
+/* 受診される方へ */
+
+#consult {
+  width: 100%;
+  margin: 0 auto;
+}
+.initial {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.initial_left {
+  width: 90%;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.initial_right {
+  width: 100%;;
+  padding: 15px 0 0 50px;
+  border: 1.5px solid #333;
+  border-radius: 30px;
+  margin: 30px 0 0 30px;
+}
+
+.initial_left span {
+  margin: 10px 0;
+  background-color: rgba(220, 250, 211, 0.932);
+  border-radius: 10px;
+  width: 300px;
+  padding: 2px 15px;
+}
+
+.initial_right {
+  width: 100%;
+  padding: 15px 0 0 50px;
+  border: 1.5px solid #333;
+  border-radius: 30px;
+  margin: 30px 0 0 30px;
+}
+
+.initial_left span {
+  margin: 10px 0;
+  background-color: rgba(220, 250, 211, 0.932);
+  border-radius: 10px;
+  width: 300px;
+  padding: 2px 15px;
+}
+
+}
 

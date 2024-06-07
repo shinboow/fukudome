@@ -30,6 +30,22 @@
           <a href="/index.html#information">お知らせ</a>
           <a href="/index.html#access-information">アクセス</a>
         </nav>
+
+        <!-- スマホ用メニューボタン -->
+      <img id="menu-sp" src="/image/bars_24.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+      <!-- スマホ用ナビゲーション -->
+      <nav id="nav-sp">
+        <img id="close" src="/image/close-button-png-26.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+          src="/logo/logo-sp.png" alt="トップページに戻る"></a>
+        <a class="menu" href="/index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">トップページ</a>
+        <a class="menu" href="/index.html#examination_guide" onclick="document.getElementById('nav-sp').style.display = 'none'">診療案内</a>
+        <a class="menu" href="/introduction.html" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて</a>
+        <a class="menu" href="/recruit.html" onclick="document.getElementById('nav-sp').style.display = 'none'">求人案内</a>
+        <a class="menu" href="/index.html#information"onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ</a>
+        <a class="menu" href="/index.html#access-information"onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス</a>
+      </nav>
     </header>
     <!-- メインビジュアル -->
     <article>
@@ -37,7 +53,7 @@
         <div id="main-message">
           <div id="main-message_1">
           <h1>安全で快適な<br>透析治療を</h1>
-          <p>ふくどめクリニックは、患者様の<br>生活の質向上を目指します</p>
+          <p>ふくどめクリニックは、患者様<br>の生活の質向上を目指します</p>
           </div>
         </div>
         <img src="image/IMG_2750.jpg" alt="建物の風景">
@@ -46,13 +62,13 @@
       <!-- ナビサブ -->
       <div id="nav-sub">
         <nav id="nav-pc">
-          <a href="introduction.html" dlass="introduction"><img src="image/img006.png" alt="クリニックのアイコン">
+          <a href="introduction.html" class="introduction_1"><img src="image/img006.png" alt="クリニックのアイコン">
             <p class="nav-sub-p">クリニックについて</p>
           </a>
-          <a href="introduction.html#docter" class="introduction"><img src="image/img005.png" alt="聴診器のアイコン">
+          <a href="introduction.html#docter" class="introduction_2"><img src="image/img005.png" alt="聴診器のアイコン">
             <p class="nav-sub-p">院長紹介</p>
           </a>
-          <a href="introduction.html#feature" class="introduction"><img src="image/img004.png" alt="問診表のアイコン">
+          <a href="introduction.html#feature" class="introduction_3"><img src="image/img004.png" alt="問診表のアイコン">
             <p class="nav-sub-p">クリニックの特徴</p>
           </a>
         </nav>
@@ -109,24 +125,22 @@
               <h4>腎臓内科</h4>
             </div>
             <img src="image/IMG_8.jpg" alt="透析室の風景">
-          </div>
+            <div class="guide_content_left">
+              <p class="guide_content_p">【診療内容】</p>
+              <p>蛋白尿、腎機能低下などの慢性腎臓病、その他腎臓病の評価・管理</p>
+            </div>
+          </div>  
           <div class="guide_right">
             <div class="guide_name_right">
               <h4>人工透析内科</h4>
             </div>
             <img src="image/IMG_3.jpg" alt="透析室の風景">
-          </div>
+            <div class="guide_content_right">
+              <p class="guide_content_p">【診療内容】</p>
+              <p>血液透析（HD）・血液透析濾過（オンラインHDFや間歇補充型HDF）</p>
+            </div>   
+          </div> 
         </div>
-        <div id="guide_content">
-          <div class="guide_content_left">
-            <p class="guide_content_p">【診療内容】</p>
-            <p>蛋白尿、腎機能低下などの慢性腎臓病、その他腎臓病の評価・管理</p>
-          </div>
-          <div class="guide_content_right">
-            <p class="guide_content_p">【診療内容】</p>
-            <p>血液透析（HD）・血液透析濾過（オンラインHDFや間歇補充型HDF）</p>
-          </div>   
-        </div> 
       </section>
 
         <!-- 診療時間 -->
@@ -230,12 +244,12 @@
         <div class="initial">
           <div class="initial_left">
             <span>初診の方</span>
-            <p>〇受診当日は、お手持ちの保険証をご持参の上、受付時間内にご来院ください。</p>
-            <p>〇紹介状をお持ちの方は、忘れずにご持参ください。</p>
-            <p>〇慢性腎臓病の方は、過去の採血・検尿データをご持参していただけると病状把握のためにとても役立ちます。</p>
+            <p>●受診当日は、お手持ちの保険証をご持参の上、受付時間内にご来院ください。</p>
+            <p>●紹介状をお持ちの方は、忘れずにご持参ください。</p>
+            <p>●慢性腎臓病の方は、過去の採血・検尿データをご持参していただけると病状把握のためにとても役立ちます。</p>
             <span>再診の方</span>
-            <p>〇受診の際は、その都度保険証の提示をお願いしております。</p>
-            <p>〇氏名・住所など、保険証の内容に変更があった場合には、必ず受付にお申し出ください。</p>
+            <p>●受診の際は、その都度保険証の提示をお願いしております。</p>
+            <p>●氏名・住所など、保険証の内容に変更があった場合には、必ず受付にお申し出ください。</p>
           </div>
           <div class="initial_right">
             <p>ご持参いただくもの</p>
@@ -291,10 +305,9 @@
     
           <!-- アクセス -->
           <div id="access">
-            <script type="text/javascript" src="https://map.yahoo.co.jp/embedmap/V3/?lon=131.42601&lat=31.84831&zoom=15&cond=action:place;maptype:basic;gid:H7ehfmcKGQY;panel:open;center:shift&width=600&height=400"></script>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1694.5724881253736!2d131.42446827551908!3d31.848269967369628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f50!3m3!1m2!1s0x3538c8172d668db1%3A0x14fcb24051a586ca!2z44G144GP44Gp44KB44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1717472823366!5m2!1sja!2sjp" width="100%" height="295" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-
       </section>  
       <div id="banner">
         <div>
@@ -304,10 +317,6 @@
         <div>
           <p>子供110番</p>
         <img src="image/IMG_3260.jpg" alt="子供警察官の写真">
-        </div>
-        <div>
-          <p>壁掛け絵画</p>
-          <img src="image/img_keiji.png" alt="廊下に飾ってある絵画の写真">
         </div>
       </div>
     </article>
