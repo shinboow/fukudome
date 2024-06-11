@@ -455,12 +455,10 @@ header {
   margin-top: 40px;
 }
 
-#access-information > div {
+.infomation-cl {
   display: flex;
   margin: auto;
   width: 1110px;
-}
-.infomation-cl {
   margin-top: 5px;
 }
 
@@ -497,7 +495,6 @@ header {
 /* アクセス */
 #access {
   width: 100%;
-  height: 450px;
   margin-top: 30px;
 }
 
@@ -926,14 +923,14 @@ footer {
   #logo-sp img {
     display: block;
     width: 80%;
-    margin: 60px auto;
+    margin: 40px auto;
   }
 
   #header-logo > span {
     display: none;
   }
 
-  #header-log0 > p {
+  #header-logo > div > p {
     display: none;
   }
   #close {
@@ -949,7 +946,7 @@ footer {
   }
 
   #nav-sp {
-    background-color: rgb(70, 2, 2);
+    background-color: rgb(5, 9, 223);
     position: absolute;
     left: 0;
     top:0;
@@ -957,10 +954,6 @@ footer {
     height: 100%;
     display: none;
     z-index: 100;
-  }
-
-  #logo-sp {
-    margin: 80px 0 30px 20px;
   }
   
   #nav-sp > a {
@@ -984,7 +977,7 @@ footer {
     display: block;
     margin: 0 30px;
     height: 44px;
-    font-size: 16px;
+    font-size: 20px;
     background-image: url("/image/arrow.png");
     background-repeat: no-repeat;
     background-position: right top;
@@ -1080,7 +1073,6 @@ footer {
   /* 診療案内 */
 #examination_guide {
   width: 100%;
-  margin-top: 30px;
 }
 
 .guide_left {
@@ -1223,14 +1215,6 @@ footer {
   line-height: 1.7;
 }
 
-.initial_right {
-  width: 100%;;
-  padding: 15px 0 0 50px;
-  border: 1.5px solid #333;
-  border-radius: 30px;
-  margin: 30px 0 0 30px;
-}
-
 .initial_left span {
   margin: 10px 0;
   background-color: rgba(220, 250, 211, 0.932);
@@ -1238,22 +1222,331 @@ footer {
   width: 300px;
   padding: 2px 15px;
 }
-
 .initial_right {
+  width: 93%;
+  border: 1.5px solid #333;
+  border-radius: 30px;
+  margin: 20px 10px;
+}
+
+.initial_right > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* アクセス */
+#access-information {
   width: 100%;
-  padding: 15px 0 0 50px;
-  border: 1.5px solid #333;
-  border-radius: 30px;
-  margin: 30px 0 0 30px;
-}
-
-.initial_left span {
-  margin: 10px 0;
   background-color: rgba(220, 250, 211, 0.932);
+  margin-top: 20px;
+}
+
+#access-information > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.vision {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.vision > tbody > tr > th {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgb(70, 2, 2);
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.vision > tbody > tr > td {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+#feature-1 {
+  width: 100%;
+  display: flex;
+}
+
+.feature-content {
+  width: 50%;
+}
+
+#feature-1 > img {
+  width: 40%;
+}
+#access {
+  width: 100%;
+  margin: 15px 0 20px 0;
+}
+
+.access-way {
+  margin-top: 5px;
+}
+
+.access-way_1 {
+  display: flex;
+  width: 90%;
+  height: 100px;
+  margin: 20px 0 0 20px;
+  
+}
+
+.access-way_1 > img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.access-way_1 > span {
+  margin-left: 10px;
+  padding-top: 17px;
+}
+
+/* 広告 */
+#banner {
+  width: 90%;
+  text-align: center;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+#banner img {
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
-  width: 300px;
-  padding: 2px 15px;
+  margin: 10px 40px;
 }
+
+
+
+/* フッター */
+footer {
+  width: 100%;
+  background-color: rgb(245, 242, 242);
+  padding-top: 10px;
+}
+
+.footer-logo {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 15px;
+  text-align: center;
+  color: rgb(55, 180, 61);
+}
+
+.copyright {
+  text-align: right;
+  font-size: 12px;
+}
+
+/* introduction.html SP */
+/* クリニックについて */
+.submain-image {
+  display: flex;
+  position: relative;
+  height: 250px;
+  z-index: 1;
+}
+
+.submain-image > p {
+  display: none;
+}
+
+.submain-image > h1 {
+  top: 80px;
+  left: 14px;
+  color: #ffffff;
+  font-size: 35px;
+  position: absolute;
+  z-index: 2;
 
 }
 
+.submain-image > img {
+  width: 100%;
+  right: 0px;
+  height: 230px;
+  position: absolute;
+}
+/* クリニック概要 */
+#outline {
+ width: 100%;
+ margin: auto;
+}
+
+.outline_img {
+  display: flex;
+  justify-content: center;
+}
+
+.outline_img img {
+  width: 350px;
+  height: 300px;
+  margin: 10px 0 30px 20px;
+  border-radius: 30px;
+}
+
+#outline {
+  width: 1300px;
+  margin: auto;
+}
+
+.outline_table {
+  width: 1050px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.outline_table > tbody > tr > th {
+  width: 100px;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(70, 2, 2);
+  text-align: center;
+  height: 60px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.outline_table > tbody > tr > td {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  height: 60px;
+}
+
+/* 院長紹介 */
+#docter {
+  margin: 20px 0;
+}
+
+#docter-file {
+  width: 930px;
+  height: 390px;
+  margin: 0 auto 40px auto;
+}
+
+.docter-img {
+  float: right;
+  width: 450px;
+  height: 370px;
+  box-shadow: 10px 10px 0 rgb(182, 182, 182);
+  margin-left: 50px;
+}
+
+.docter-name {
+  font-size: 21px;
+}
+
+.docter-birth {
+  margin: 30px 0 70px 0;
+}
+
+.docter-from {
+  margin-left: 30px;
+}
+
+/* 経歴・専門医・所属学会 */
+#career {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(220, 250, 211, 0.932);
+}
+
+.career-h3 {
+  margin-top: 30px;
+}
+
+.career-left {
+  width: 380px;
+  margin:0 120px 30px 50px;
+}
+
+.career-dl > dt {
+  float: left;
+  line-height: 2;
+}
+
+.career-dl > dd {
+  margin-left: 100px;
+  line-height: 2;
+}
+
+.career-right {
+  width: 350px;
+}
+
+.career-right ul {
+  line-height: 2;
+}
+
+/* 医院の特徴 */
+
+#feature > div {
+  width: 1100px;
+  margin: auto;
+}
+.feature_left {
+  width: 780px;
+  height: 275px;
+  margin-right:auto;
+}
+
+.feature_right {
+  width: 780px;
+  height: 275px;
+  margin-left:auto;
+}
+
+.feature-img-left {
+  float: left;
+  width: 250px;
+  height: 250px;
+  border-radius: 120px;
+  box-shadow: 0 0 10px #333;
+  margin: 10px 50px 10px 20px;
+}
+
+.feature-number {
+  display: block;
+  font-size: 48px;
+  color: rgb(108, 199, 112);
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.feature-h3 {
+  display: block;
+  font-size: 21px;
+  margin: 10px 0px;
+}
+
+.feature-p {
+  margin: 0;
+}
+
+.feature-img-right {
+  float: right;
+  width: 250px;
+  height: 250px;
+  border-radius: 120px;
+  box-shadow: 0 0 10px #333;
+  margin: 10px 20px 10px 50px;
+}
+
+.feature-number {
+  display: block;
+  font-size: 48px;
+  color: rgb(108, 199, 112);
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.feature-h3 {
+  display: block;
+  font-size: 21px;
+  margin: 10px 0px;
+}
+}
