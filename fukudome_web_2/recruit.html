@@ -17,6 +17,7 @@
         <p class="header-closed">【休診日】日祝日・火・木・土曜午後</p>
       </span>
     </div>
+
       <!-- PC用ナビ -->
       <nav id="nav-pc">
         <a href="/index.html">ホーム</a>
@@ -26,6 +27,22 @@
         <a href="/index.html#information">お知らせ</a>
         <a href="/index.html#access-information">アクセス</a>
       </nav>
+
+      <!-- スマホ用メニューボタン -->
+    <img id="menu-sp" src="/image/bars_24.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+    <!-- スマホ用ナビゲーション -->
+    <nav id="nav-sp">
+      <img id="close" src="image/close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+      <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+        src="logo/logo.png" alt="トップページに戻る"></a>
+      <a class="menu" href="/index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">トップページ</a>
+      <a class="menu" href="/index.html#examination_guide" onclick="document.getElementById('nav-sp').style.display = 'none'">診療案内</a>
+      <a class="menu" href="/introduction.html" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて</a>
+      <a class="menu" href="/recruit.html" onclick="document.getElementById('nav-sp').style.display = 'none'">求人案内</a>
+      <a class="menu" href="/index.html#information"onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ</a>
+      <a class="menu" href="/index.html#access-information"onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス</a>
+    </nav>
   </header>
 
   <!-- スタッフ募集 -->

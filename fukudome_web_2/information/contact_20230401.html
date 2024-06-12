@@ -17,6 +17,7 @@
         <p class="header-closed">【休診日】日祝日・火・木・土曜午後</p>
       </span>
     </div>
+
     <!-- PC用ナビ -->
     <nav id="nav-pc">
       <a href="/index.html">ホーム</a>
@@ -26,6 +27,22 @@
       <a href="/index.html#information">お知らせ</a>
       <a href="/index.html#access-information">アクセス</a>
     </nav>
+
+    <!-- スマホ用メニューボタン -->
+  <img id="menu-sp" src="/image/bars_24.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+  <!-- スマホ用ナビゲーション -->
+  <nav id="nav-sp">
+    <img id="close" src="/image/close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+    <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+      src="/logo/logo.png" alt="トップページに戻る"></a>
+    <a class="menu" href="/index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">トップページ</a>
+    <a class="menu" href="/index.html#examination_guide" onclick="document.getElementById('nav-sp').style.display = 'none'">診療案内</a>
+    <a class="menu" href="/introduction.html" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて</a>
+    <a class="menu" href="/recruit.html" onclick="document.getElementById('nav-sp').style.display = 'none'">求人案内</a>
+    <a class="menu" href="/index.html#information"onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ</a>
+    <a class="menu" href="/index.html#access-information"onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス</a>
+  </nav>
   </header>
 
   <!-- お知らせ -->
@@ -45,20 +62,11 @@
      <p class="infomation_date">2023年4月1日</p>
     </div>
     <h1 class="infomation_title">一般名処方について</h1>
-    <p> 当院では、薬剤の一般名を記載する処方箋を交付することがございます。
-      <br>一般名処方とは、医師が患者様に必要な薬剤を、「商品名」ではなく「成分名」
-      <br>で表記した処方せんとなっております。
+    <p> 当院では、薬剤の一般名を記載する処方箋を交付することがございます。<br>一般名処方とは、医師が患者様に必要な薬剤を、「商品名」ではなく「成分名」で表記した処方せんとなっております。</p>
       <br>
-      <br> 一般名処方は、同じ成分であれば薬価が低い薬剤を調剤することが可能となる
-      <br>ため、医療費の削減につながります。また、一般名処方により、同じ成分であれ
-      <br>ば、同じ効果が期待できるため、供給が不安定な医薬品を調剤する患者様の安全
-      <br>性が確保されます。
+      <p> 一般名処方は、同じ成分であれば薬価が低い薬剤を調剤することが可能となるため、医療費の削減につながります。また、一般名処方により、同じ成分であれば、同じ効果が期待できるため、供給が不安定な医薬品を調剤する患者様の安全性が確保されます。</p>
       <br>
-      <br>ただし、一般名処方は、医療用医薬品として承認された商品名と異なる名称が処
-      <br>方箋に表示される為、患者様が混乱することがあります。そのため、当院では、
-      <br>薬剤の供給状況等を踏まえつつ、一般名処方の趣旨を患者様に充分説明すること
-      <br>を心がけておりますが、ご不明な点はお気軽に医師にお問い合わせください。
-    </p>
+      <p>ただし、一般名処方は、医療用医薬品として承認された商品名と異なる名称が処方箋に表示される為、患者様が混乱することがあります。そのため、当院では、薬剤の供給状況等を踏まえつつ、一般名処方の趣旨を患者様に充分説明することを心がけておりますが、ご不明な点はお気軽に医師にお問い合わせください。</p>
       <a href="/index.html#information"><span class="information_link">お知らせ・ご連絡→</span></a>
    </section>
   </article>
