@@ -1061,7 +1061,7 @@ footer {
 }
 
 .guide_left {
-  width: 100%;
+  width: 95%;
   height: 500px;
   margin: 0 auto 20px auto;
   position: relative;
@@ -1070,7 +1070,7 @@ footer {
 }
 
 .guide_right {
-  width: 100%;
+  width: 95%;
   height: 500px;
   margin: 0 auto 20px auto;
   position: relative;
@@ -1079,7 +1079,7 @@ footer {
 }
 
 .guide_name_left {
-  width: 100%;
+  width: 95%;
   padding-top: 10px;
   margin: auto;
   font-size: 24px;
@@ -1089,7 +1089,7 @@ footer {
 }
 
 .guide_name_right {
-  width: 100%;
+  width: 95%;
   padding-top: 10px;
   font-size: 24px;
   color: #ffffff;
@@ -1209,7 +1209,7 @@ footer {
   padding: 2px 15px;
 }
 .initial_right {
-  width: 93%;
+  width: 95%;
   border: 1.5px solid #333;
   border-radius: 30px;
   margin: 20px 10px;
@@ -1618,6 +1618,6 @@ footer {
 /* お知らせ・防災情報のリンク */
 .record_link {
   display: block;
-  margin: 30px 0 0 80px;
+  margin: 30px 0 0 20px;
 }
 }
