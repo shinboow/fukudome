@@ -1342,7 +1342,7 @@ footer {
 
 .submain-image > h1 {
   top: 80px;
-  left: 14px;
+  left: 32px;
   color: #ffffff;
   font-size: 35px;
   position: absolute;
@@ -1520,7 +1520,6 @@ footer {
 /* 求人案内 SP*/
 .recruit-form {
   width: 90%;
-  height: 200px;
   margin: auto;
   background-color: rgba(220, 250, 211, 0.932);
   border-radius: 20px;
@@ -1544,7 +1543,7 @@ footer {
 }
 
 .contact p {
-  padding-left: 50px;
+  padding: 0 40px 0 40px;
 }
 
 .contact-tel {
