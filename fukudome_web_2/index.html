@@ -3,7 +3,7 @@
   <head>
     <title>ふくどめクリニック-宮崎市の腎臓内科・人工透析内科</title>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="宮崎県宮崎市にある腎臓内科・人工透析内科のふくどめクリニックです。患者様との信頼関係を大切にし、快適で安心してできる治療を提供します。">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -12,18 +12,18 @@
     <!-- ヘッダー -->
     <header>
       <div id="header-logo">
-        <div>
+        <div class="header-left">
           <p>医療法人 慶仁会</p>
-          <a href="index.html" id="logo"><img src="logo/logo.png" alt="ふくどめクリニックのロゴマーク"></a>
+          <a href="/index.html" id="logo" ><img src="logo/logo.png" alt="ふくどめクリニックのロゴマーク"></a>
         </div>
-        <span>
-          <p class="header-tel">TEL:0985-41-7700</p>
-          <p class="header-closed">【休診日】日祝日・火・木・土曜午後</p>
-        </span>
+        <div class="header-right">
+           <p class="header-tel">TEL:0985-41-7700</p>
+           <p class="header-closed">【休診日】日祝日・火・木・土曜午後</p>
+         </div>
       </div>
-      
+  
         <!-- PC用ナビ -->
-        <nav id="nav-pc">
+        <nav class="nav-pc">
           <a href="/index.html">ホーム</a>
           <a href="/index.html#examination_guide">診療案内</a>
           <a href="/introduction.html">クリニックについて</a>
@@ -31,9 +31,11 @@
           <a href="/index.html#information">お知らせ</a>
           <a href="/index.html#access-information">アクセス</a>
         </nav>
+  
+
 
         <!-- スマホ用メニューボタン -->
-      <img id="menu-sp" src="/image/bars_24.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+      <img id="menu-sp" src="/image/btn03-14.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
 
       <!-- スマホ用ナビゲーション -->
       <nav id="nav-sp">
@@ -44,25 +46,26 @@
         <a class="menu" href="/index.html#examination_guide" onclick="document.getElementById('nav-sp').style.display = 'none'">診療案内</a>
         <a class="menu" href="/introduction.html" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて</a>
         <a class="menu" href="/recruit.html" onclick="document.getElementById('nav-sp').style.display = 'none'">求人案内</a>
-        <a class="menu" href="/index.html#information"onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ</a>
-        <a class="menu" href="/index.html#access-information"onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス</a>
+        <a class="menu" href="/index.html#information" onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ</a>
+        <a class="menu" href="/index.html#access-information" onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス</a>
       </nav>
     </header>
     <!-- メインビジュアル -->
     <article>
-      <section id="main-visual">
+      <div id="main-visual">
+        <h1>宮崎市の腎臓内科・人工透析内科</h1>
         <div id="main-message">
           <div id="main-message_1">
-          <h1>安全で快適な<br>透析治療を</h1>
-          <p>ふくどめクリニックは、患者様<br>の生活の質向上を目指します</p>
+            <p class="main-message_p">安全で快適な<br>透析治療を</p>
+            <p>ふくどめクリニックは、患者様<br>の生活の質向上を目指します</p>
           </div>
         </div>
         <img src="image/201609231201004694.jpg" alt="建物の風景">
-      </section>
+      </div>
 
       <!-- ナビサブ -->
       <div id="nav-sub">
-        <nav id="nav-pc">
+        <nav class="nav-pc">
           <a href="introduction.html" class="introduction_1"><img src="image/img006.png" alt="クリニックのアイコン">
             <p class="nav-sub-p">クリニックについて</p>
           </a>
@@ -125,7 +128,7 @@
             <div class="guide_name_left">
               <h4>腎臓内科</h4>
             </div>
-            <img src="image/201609231201276734.jpg" alt="外来の風景">
+            <img src="image/IMG_3362.jpg" alt="外来の風景">
             <div class="guide_content_left">
               <p class="guide_content_p">【診療内容】</p>
               <p>蛋白尿、腎機能低下などの慢性腎臓病、その他腎臓病の評価・管理</p>
@@ -145,7 +148,7 @@
       </section>
 
         <!-- 診療時間 -->
-        <section id="examination_hours">
+        <div id="examination_hours">
           <div id="guide_hours">
             <div class="guide_hours_left">
               <div class="hours-1">
@@ -237,7 +240,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!-- 受診される方へ -->
       <section id="consult">
@@ -294,17 +297,17 @@
             <div class="access-way">
               <div class="access-way_1">
                 <img src="image/img_about01.jpg" alt="当院駐車場の様子">
-                 <span>
+                 <div>
                    <h4>お車でお越しの方</h4>
                    <p>駐車場を20台ほど用意しています。</p>
-                 </span>
+                 </div>
               </div>
             </div>       
           </div>
 
             <!-- アクセス -->
           <div id="access">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1694.5724881253736!2d131.42446827551908!3d31.848269967369628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f50!3m3!1m2!1s0x3538c8172d668db1%3A0x14fcb24051a586ca!2z44G144GP44Gp44KB44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1717472823366!5m2!1sja!2sjp" width="100%" height="295" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1694.5724881253736!2d131.42446827551908!3d31.848269967369628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f50!3m3!1m2!1s0x3538c8172d668db1%3A0x14fcb24051a586ca!2z44G144GP44Gp44KB44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1717472823366!5m2!1sja!2sjp" width="510" height="295" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>  
@@ -321,7 +324,7 @@
     </article>
     
     <footer>
-      <nav id="nav-pc">
+      <nav class="nav-pc">
         <a href="/index.html">ホーム</a>
         <a href="/index.html#examination_guide">診療案内</a>
         <a href="/introduction.html">クリニックについて</a>
@@ -329,6 +332,7 @@
         <a href="/index.html#information">お知らせ</a>
         <a href="/index.html#access-information">アクセス</a>
       </nav>
+      <div class="page-top"></div>
       <p class="footer-logo">ふくどめクリニック</p>
       <p class="copyright">© 2024 ふくどめクリニック</p>
     </footer>

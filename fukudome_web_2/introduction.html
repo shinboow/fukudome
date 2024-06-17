@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <title>医院紹介-宮崎市の腎臓内科・人工透析内科</title>
+  <title>クリニックについて-宮崎市の腎臓内科・人工透析内科-ふくどめクリニック</title>
   <meta charset="UTF-8">
-  <meta name="description" content="">
+  <meta name="description" content="宮崎県宮崎市にある腎臓内科・人工透析内科のふくどめクリニックです。患者様との信頼関係を大切にし、快適で安心してできる治療を提供します。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,17 +11,18 @@
   <!-- ヘッダー -->
   <header>
     <div id="header-logo">
-      <div>
+      <div class="header-left">
         <p>医療法人 慶仁会</p>
-        <a href="index.html" id="logo"><img src="logo/logo.png" alt="ふくどめクリニックのロゴマーク"></a>
+        <a href="/index.html" id="logo"><img src="logo/logo.png" alt="ふくどめクリニックのロゴマーク"></a>
       </div>
-      <span>
-        <p class="header-tel">TEL:0985-41-7700</p>
-        <p class="header-closed">【休診日】日祝日・火・木・土曜午後</p>
-      </span>
+      <div class="header-right">
+         <p class="header-tel">TEL:0985-41-7700</p>
+         <p class="header-closed">【休診日】日祝日・火・木・土曜午後</p>
+       </div>
     </div>
+
       <!-- PC用ナビ -->
-      <nav id="nav-pc">
+      <nav class="nav-pc">
         <a href="/index.html">ホーム</a>
         <a href="/index.html#examination_guide">診療案内</a>
         <a href="/introduction.html">クリニックについて</a>
@@ -42,19 +43,19 @@
         <a class="menu" href="/index.html#examination_guide" onclick="document.getElementById('nav-sp').style.display = 'none'">診療案内</a>
         <a class="menu" href="/introduction.html" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて</a>
         <a class="menu" href="/recruit.html" onclick="document.getElementById('nav-sp').style.display = 'none'">求人案内</a>
-        <a class="menu" href="/index.html#information"onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ</a>
-        <a class="menu" href="/index.html#access-information"onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス</a>
+        <a class="menu" href="/index.html#information" onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ</a>
+        <a class="menu" href="/index.html#access-information" onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス</a>
       </nav>
   </header>
   
 
   <!-- クリニックについて-->
   <article>
-    <section class="submain-image">
+    <div class="submain-image">
         <h1>クリニックについて</h1>
         <p>ホーム > クリニックについて</p>
         <img src="image/water.img.jpg" alt="水の画像">
-    </section>
+    </div>
     
     <!-- クリニックの概要 -->
   
@@ -209,7 +210,7 @@
   </article>
 
   <footer>
-    <nav id="nav-pc">
+    <nav class="nav-pc">
       <a href="/index.html">ホーム</a>
       <a href="/index.html#examination_guide">診療案内</a>
       <a href="/introduction.html">クリニックについて</a>
