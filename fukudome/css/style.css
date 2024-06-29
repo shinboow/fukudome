@@ -1,0 +1,1762 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  height: 100%;
+  position: relative;
+  height: auto !important;
+  min-height: 100%;
+}
+
+article {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(245, 242, 242);
+}
+
+h1 {
+  margin:  0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  padding: 30px 40px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* PC用のスタイル */
+@media print, screen and ( min-width: 768px) {
+  
+body {
+  max-width: 1500px;
+  min-width: 1230px;
+  margin: 0 auto 0 auto;
+}
+header {
+  background-color: #ffffff;
+}
+#header-logo {
+  position: relative;
+  width: 100%;
+  height: 65px;
+
+}
+
+#logo img {
+  width: 290px;
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  z-index: 10;
+}
+
+.header-tel {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.header-left > p {
+  color: rgb(55, 180, 61);
+  font-weight: bold;
+  position: absolute;
+  top: 8px;
+  left: 250px;
+  z-index: 20;
+}
+
+.header-right {
+  position: absolute;
+  right: 200px;
+  top: 15px;
+}
+.header-closed {
+  color: red;
+  font-size: 14px;
+}
+
+/* ナビゲーション */
+.nav-pc {
+  text-align: center;
+  width: 760px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ナビゲーションリンクの装飾 */
+.nav-pc > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-pc > a:link {
+  color: #333;
+}
+
+.nav-pc > a:visited {
+  color: #333;
+}
+.nav-pc > a:hover {
+  color:rgb(55, 180, 61);
+}
+
+.nav-pc > a:active {
+  color: #333;
+}
+
+/* PCページ用　SPナビ非表示 */
+#nav-sp {
+  display: none;
+}
+
+#menu-sp {
+  display: none;
+}
+
+/* トップページ */
+/* メインビジュアル */
+#main-visual {
+  width: 100%;
+  position: relative;
+  height: 700px;
+}
+
+#main-visual img {
+  width: 100%;
+  height: 700px;
+}
+
+#main-message {
+  position: absolute;
+  width: 500px;
+  color: #ffffff;
+  text-align: center;
+  top: -50px;
+  right: 100px;
+}
+
+.main-message_p {
+  font-size: 40px;
+}
+
+#main-message_1 {
+  position: absolute;
+  top: 100px;
+  left: 86px;
+}
+
+#main-visual h1 {
+  writing-mode: vertical-rl;
+  letter-spacing: 0.5em;
+  position: absolute;
+  font-size: 18px;
+  top: 20px;
+  left: 20px;
+  color: #ffffff;
+}
+
+#main-message_1 > p {
+  padding: 20px 10px 10px 10px;
+  letter-spacing: 2px;
+}
+
+/* サブナビ */
+#nav-sub {
+  width: 900px;
+  margin: 10px auto;
+  padding-top: 10px;
+}
+
+#sub-nav {
+  text-align: center;
+  width: 760px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction_3 img {
+  padding-top: 7px;
+}
+
+.disaster_1 img {
+  padding-top: 8px;
+  margin-bottom: 6px;
+}
+
+.nav-sub-p_1 {
+  padding-left: 13px;
+}
+
+/* サブナビゲーションリンクの装飾 */
+#sub-nav > a {
+  text-decoration: none;
+  color: #333;
+}
+
+#sub-nav > a:link {
+  color: #333;
+}
+
+#sub-nav > a:visited {
+  color: #333;
+}
+#sub-nav > a:hover {
+  color:rgb(55, 180, 61);
+}
+
+#sub-nav > a:active {
+  color: #333;
+}
+
+/* お知らせ */
+#information {
+  width: 80%;
+  height: 430px;
+  padding: 0 50px;
+  margin: auto;
+  background-color: rgba(220, 250, 211, 0.932);
+  border-radius: 30px;
+}
+
+.news-list {
+  list-style: none outside;
+  margin: auto;
+  padding: 0;
+}
+
+.item a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding: 20px 20px;
+  background-color: #ffffff;
+}
+
+.item:first-child a {
+  border-top: 1px solid rgb(182, 182, 182);
+}
+
+.item .date {
+  margin: 0;
+  min-width: 140px;
+  font-size: 16px;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+
+.item .category {
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+
+.item .category span {
+  background-color: #999;
+  width: 70px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.item .title {
+  margin: 0;
+  width: 100%;
+}
+
+.item a:hover .title {
+  color: rgb(55, 180, 61);
+}
+
+/* 診療案内 */
+#examination_guide {
+  width: 90%;
+  margin: 30px auto;
+}
+
+#guide {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  height: 560px;
+}
+
+.guide_left {
+  width: 450px;
+  height: 550px;
+  position: relative;
+}
+
+.guide_right {
+  width: 450px;
+  height: 550px;
+  margin-left: 150px;
+  position: relative;
+}
+
+.guide_name_left {
+  position: absolute;
+  top: -60px;
+  left: -30px;
+  width: 450px;
+  height: 430px;
+  padding-top: 10px;
+  background-color:rgb(141, 233, 146) ;
+  font-size: 28px;
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
+}
+
+.guide_name_right {
+  position: absolute;
+  top: -60px;
+  right: -30px;
+  width: 450px;
+  height: 430px;
+  padding-top: 10px;
+  background-color:rgb(141, 233, 146) ;
+  font-size: 28px;
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
+}
+
+.guide_name h4 {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+#guide img {
+  position: absolute;
+  width: 450px;
+  height: 430px;
+  box-shadow: 0 0 10px #999;
+  z-index: 2;
+}
+
+.guide_content_left {
+  position: absolute;
+  bottom: 0;
+}
+
+.guide_content_right {
+  position: absolute;
+  bottom: 0;
+}
+
+.guide_content_p {
+  font-weight: bold;
+}
+
+/* 診療時間 */
+#examination_hours {
+  width: 90%;
+  margin: 0 auto;
+}
+#guide_hours {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.guide_hours_left {
+  width: 478px;
+  height: 280px;
+}
+
+.guide_hours_right {
+  width: 478px;
+  height: 280px;
+  margin-left: 150px;
+}
+
+.hours-p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hours-1 {
+  margin: 20px 0;
+}
+
+.hours-1 > span {
+  padding-left: 21px;
+  display: block;
+  line-height: 1.8;
+}
+
+.timetable {
+  border-collapse: collapse;
+}
+
+.timetable > tbody > tr > th {
+  text-align: center;
+  padding: 10px 16px;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.timetable > tbody > tr > td {
+  text-align: center;
+  padding: 10px 17px;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.timetable th {
+  background-color: rgb(55, 180, 61);
+  color: #ffffff;
+}
+.reception {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+  }
+
+/* 受診される方へ */
+
+#consult {
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+}
+.initial {
+  display: flex;
+  justify-content:center;
+}
+
+.initial_left {
+  width: 600px;
+  line-height: 2;
+}
+
+.initial_right {
+  width: 400px;
+  height: 170px;
+  padding: 15px 0 0 50px;
+  border: 1.5px solid #333;
+  border-radius: 30px;
+  margin: 30px 0 0 30px;
+}
+
+.initial_left span {
+  margin: 10px 0;
+  background-color: rgba(220, 250, 211, 0.932);
+  border-radius: 10px;
+  width: 600px;
+  padding: 2px 15px;
+}
+
+/* 医院概要 */
+#access-information {
+  width: 90%;
+  height: 550px;
+  background-color: rgba(220, 250, 211, 0.932);
+  margin: 40px auto 0 auto;
+}
+
+.infomation-cl {
+  display: flex;
+  margin: auto;
+  width: 1110px;
+  margin-top: 5px;
+}
+
+.vision {
+  border-collapse: collapse;
+}
+
+.vision > tbody > tr > th {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(70, 2, 2);
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.vision > tbody > tr > td {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+#feature-1 {
+  width: 100%;
+  display: flex;
+}
+
+.feature-content {
+  width: 50%;
+}
+
+#feature-1 > img {
+  width: 40%;
+}
+
+
+/* アクセス */
+#access {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.access-way {
+  margin-top: 20px;
+}
+
+.access-way_1 {
+  display: flex;
+  width: 500px;
+  height: 100px;
+  margin: 18px 0 0 0;
+}
+
+.access-way_1 > img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.access-way_1 > div {
+  margin-left: 25px;
+  padding-top: 24px;
+}
+
+/* 広告 */
+#banner {
+  width: 90%;
+  height: 190px;
+  text-align: center;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+#banner div {
+  height: 190px;
+}
+#banner img {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  margin: 10px 40px;
+}
+
+/* フッター */
+.footer-logo {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(55, 180, 61)
+}
+
+.copyright {
+  text-align: right;
+  font-size: 12px;
+}
+/* introduction.html */
+/* クリニックについて */
+.submain-image {
+  display: flex;
+  position: relative;
+  height: 355px;
+  z-index: 1;
+}
+
+.submain-image > p {
+  color: #ffffff;
+  position: absolute;
+  top: 200px;
+  left: 135px;
+  z-index: 2;
+}
+
+.submain-image > h1 {
+  top: 130px;
+  left: 130px;
+  color: #ffffff;
+  font-size: 45px;
+  position: absolute;
+  z-index: 2;
+
+}
+
+.submain-image > img {
+  width: 100%;
+  right: 0px;
+  height: 350px;
+  position: absolute;
+}
+/* クリニック概要 */
+#outline {
+ width: 100%;
+ margin: auto;
+}
+
+.outline_img {
+  display: flex;
+  justify-content: center;
+}
+
+.outline_img img {
+  width: 350px;
+  height: 300px;
+  margin: 10px 0 30px 20px;
+  border-radius: 30px;
+}
+
+#outline {
+  width: 1300px;
+  margin: auto;
+}
+
+.outline_table {
+  width: 1050px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.outline_table > tbody > tr > th {
+  width: 100px;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(70, 2, 2);
+  text-align: center;
+  height: 60px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.outline_table > tbody > tr > td {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  height: 60px;
+}
+
+/* 院長紹介 */
+#docter {
+  margin: 20px 0;
+}
+
+#docter-file {
+  width: 930px;
+  height: 390px;
+  margin: 0 auto 40px auto;
+}
+
+.docter-img {
+  float: right;
+  width: 450px;
+  height: 370px;
+  box-shadow: 10px 10px 0 rgb(182, 182, 182);
+  margin-left: 50px;
+}
+
+.docter-name {
+  font-size: 21px;
+}
+
+.docter-birth {
+  margin: 30px 0 70px 0;
+}
+
+.docter-from {
+  margin-left: 30px;
+}
+
+/* 経歴・専門医・所属学会 */
+#career {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(220, 250, 211, 0.932);
+}
+
+.career-h3 {
+  margin-top: 30px;
+}
+
+.career-left {
+  width: 380px;
+  margin:0 120px 30px 50px;
+}
+
+.career-dl > dt {
+  float: left;
+  line-height: 2;
+}
+
+.career-dl > dd {
+  margin-left: 100px;
+  line-height: 2;
+}
+
+.career-right {
+  width: 350px;
+}
+
+.career-right ul {
+  line-height: 2;
+}
+
+/* 医院の特徴 */
+
+#feature > div {
+  width: 1100px;
+  margin: auto;
+}
+.feature_left {
+  width: 780px;
+  height: 275px;
+  margin-right:auto;
+}
+
+.feature_right {
+  width: 780px;
+  height: 275px;
+  margin-left:auto;
+}
+
+.feature-img-left {
+  float: left;
+  width: 250px;
+  height: 250px;
+  border-radius: 120px;
+  box-shadow: 0 0 10px #333;
+  margin: 10px 50px 10px 20px;
+}
+
+.feature-number {
+  display: block;
+  font-size: 48px;
+  color: rgb(108, 199, 112);
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.feature-h3 {
+  display: block;
+  font-size: 21px;
+  margin: 10px 0px;
+}
+
+.feature-p {
+  margin: 0;
+}
+
+.feature-img-right {
+  float: right;
+  width: 250px;
+  height: 250px;
+  border-radius: 120px;
+  box-shadow: 0 0 10px #333;
+  margin: 10px 20px 10px 50px;
+}
+
+/* 求人案内ページ */
+.recruit-form {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  background-color: rgba(220, 250, 211, 0.932);
+  border-radius: 20px;
+}
+
+.recruit-form > p {
+  font-size: 18px;
+  text-align: center;
+  padding: 60px 0 20px 0;
+}
+
+.contact {
+  width: 90%;
+  height: 150px;
+  margin: 30px auto 50px auto;
+  line-height: 2;
+}
+
+.contact h4 {
+  font-size: 18px;
+  padding:0 30px;
+}
+
+.contact p {
+  padding-left: 50px;
+}
+
+.contact-tel {
+  font-weight: bold;
+}
+
+/* 防災情報 */
+#disaster_page {
+  display: flex;
+  margin: 30px 0px;
+  width: 100%;
+}
+#disaster {
+  width: 55%;
+  height: 400px;
+  padding: 0 20px;
+  background-color: rgb(100, 128, 248);
+  border-radius: 30px;
+  margin: 20px 50px;
+  color: #ffffff;
+}
+
+.disaster-list {
+  list-style: none outside;
+  margin: auto;
+  padding: 0;
+}
+
+.disaster-item a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding: 20px 20px;
+  background-color: #ffffff;
+}
+
+.disaster-item:first-child a {
+  border-top: 1px solid rgb(182, 182, 182);
+}
+
+.disaster-date {
+  margin: 0;
+  min-width: 100px;
+  font-size: 16px;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+
+.disaster-item .disaster-category {
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+
+.disaster-item .disaster-category span {
+  background-color: #999;
+  width: 70px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.disaster-item .disaster-title {
+  margin: 0;
+  width: 100%;
+}
+
+.item a:hover .title {
+  color: rgb(55, 180, 61);
+}
+
+/* 災害時ツール */
+#disaster_tool {
+  width: 30%;
+  margin: 30px;
+  height: 400px;
+}
+
+.tool_vision th {
+  width: 30px;
+  height: 40px;
+  padding-right: 18px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.tool_h3 {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.disaster_img {
+  width: 30px;
+  height: 30px;
+}
+/* お知らせページ */
+#main_infomation {
+  width: 65%;
+  margin: 0 auto 100px auto;
+  position: relative;
+}
+
+.infomation_main {
+  margin-top: 50px;
+}
+.infomation_main p {
+ display: inline-block;
+}
+
+.infomation_category {
+  width: 80px;
+  background-color: rgb(141, 233, 146);
+  margin: 15px;
+  border-radius: 10px;
+  text-align: justify;
+  text-align-last: justify;
+  padding: 5px 10px;
+}
+
+.infomation_title {
+  font-size: 28px;
+  margin: 0 0 30px 0;
+  padding: 0 50px;
+}
+
+.font_weight {
+  font-weight: bold;
+}
+
+/* contact_20191223.html */
+.information_ol {
+  margin: 0;
+  padding-left: 100px;
+}
+
+#main_infomation > p {
+  padding: 0 50px;
+}
+
+#main_infomation  img {
+  width: 60px;
+  height: 60px;
+}
+
+.information_link {
+  display: inline-block;
+   position: absolute;
+   width: 160px;
+   height: 35px;
+   background-color: rgb(154, 151, 151);
+   color: #ffffff;
+   border: 2px double rgb(70, 2, 2);
+   border-radius: 5px;
+   text-align: center;
+   padding-top: 12px;
+   margin-top: 30px;
+   right: 0;
+}
+/* お知らせ・防災情報のリンク */
+.record_link {
+  display: block;
+  margin: 30px 0 0 80px;
+  font-size: 20px;
+  font-weight: bold;
+}
+}
+
+/* SP用スタイル */
+/* トップページ */
+@media print, screen and (max-width:767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  /* PCナビ非表示 SP*/
+  .nav-pc {
+    display: none;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .header-left > p {
+    display: none;
+  }
+
+  #menu-sp {
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 9%;
+    z-index: 100;
+  }
+
+  .header-left img {
+    display: block;
+    width: 80%;
+    padding: 14px;
+  }
+
+  #nav-sp > div {
+    background-color: #ffffff;
+    height: 100px;
+  }
+
+  #logo-sp {
+    background-color: #ffffff;
+  }
+
+  #logo-sp img {
+    display: block;
+    width: 80%;
+    padding: 14px;
+  }
+
+  #close {
+    position: absolute;
+    width: 7%;
+    top: 10px;
+    right: 10px;
+  }
+  
+  /* SP用ナビゲーションの切り替え SP*/
+  h2 {
+    padding: 20px 20px 10px 20px;
+  }
+
+  #nav-sp {
+    background-color: rgb(55, 180, 61);
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+  }
+  
+  #nav-sp > a {
+    display: block;
+  }
+  #nav-sp > a:link {
+    color: #ffffff;
+  }
+  #nav-sp > a:visited {
+    color: #ffffff;
+  }
+  #nav-sp > a:hover {
+    color: rgb(141, 233, 146);
+    text-decoration: underline;
+  }
+  #nav-sp > a:active {
+    color: #ffffff;
+  }
+  #nav-sp > .menu {
+    text-decoration: none;
+    display: block;
+    margin: 50px 30px;
+    height: 44px;
+    font-size: 20px;
+    background-image: url("/image/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  /* メインビジュアル SP*/
+  #main-visual {
+    position: relative;
+  }
+
+  #main-visual h1 {
+    position: absolute;
+    color: #ffffff;
+    writing-mode: vertical-rl;
+    font-size: 16px;
+    font-weight: normal;
+    top: 20px;
+    right: 10px;
+  }
+
+  #main-message {
+    position: absolute;
+  }
+
+  .main-message_p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  #main-visual > img {
+    width: 100%;
+    height: 300px;
+  }
+
+  #main-message_1 {
+    width: 300px;
+    background-color: rgba(64, 97, 241, 0.315);
+    color: #ffffff;
+    height: 280px;
+    border-radius: 0 0 300px 0;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  /* お知らせ SP*/
+  #information {
+    width: 80%;
+    padding: 0 20px 30px 20px;
+    margin: 30px auto 10px auto;
+    background-color: rgba(220, 250, 211, 0.932);
+    border-radius: 30px;
+  }
+  
+  .news-list {
+    list-style: none outside;
+    margin: auto;
+    padding: 0;
+  }
+  
+  .item a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding: 20px 20px;
+    background-color: #ffffff;
+  }
+  
+  .item:first-child a {
+    border-top: 1px solid rgb(182, 182, 182);
+  }
+  
+  .item .date {
+    margin: 0;
+    font-size: 16px;
+    color: #999;
+    padding: 0 20px 0 0;
+  }
+  
+  .item .category {
+    margin: 0 0 15px 0;
+    padding: 0 20px 0 0;
+  }
+  
+  .item .category span {
+    background-color: #999;
+    width: 60px;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: justify;
+    text-align-last: justify;
+  }
+  
+  .item .title {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .item a:hover .title {
+    color: rgb(55, 180, 61);
+  }
+
+  /* 診療案内 SP*/
+#examination_guide {
+  width: 100%;
+}
+
+.guide_left {
+  width: 95%;
+  height: 500px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  background-color: rgb(55, 180, 61);
+  text-align: center;
+}
+
+.guide_right {
+  width: 95%;
+  height: 500px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  background-color: rgb(55, 180, 61);
+  text-align: center;
+}
+
+.guide_name_left {
+  width: 95%;
+  padding-top: 10px;
+  margin: auto;
+  font-size: 24px;
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
+}
+
+.guide_name_right {
+  width: 95%;
+  padding-top: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
+}
+
+.guide_name h4 {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+#guide img {
+  width: 90%;
+  height: 350px;
+  margin: auto;
+  box-shadow: 0 0 10px #999;
+  z-index: 2;
+  border-radius: 30px;
+}
+
+.guide_content_left {
+  margin: 15px 0;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+.guide_content_right {
+  margin: 15px 0;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+.guide_content_p {
+  font-weight: bold;
+}
+
+/* 診療時間 SP*/
+#examination_hours {
+  margin: 0 auto;
+  width: 100%;
+}
+#guide_hours {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hours-p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hours-1 {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.hours-1 > span {
+  padding-left: 21px;
+  display: block;
+  line-height: 1.8;
+}
+
+.timetable {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.timetable > tbody > tr > th {
+  text-align: center;
+  padding: 0;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.timetable > tbody > tr > td {
+  text-align: center;
+  padding: 0 10px;
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.timetable th {
+  background-color: rgb(55, 180, 61);
+  color: #ffffff;
+}
+.reception {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+  }
+
+/* 受診される方へ SP*/
+
+#consult {
+  width: 100%;
+  margin: 0 auto;
+}
+.initial {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.initial_left {
+  width: 90%;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.initial_left span {
+  display: inline-block;
+  margin: 10px 0 0 0;
+  background-color: rgba(220, 250, 211, 0.932);
+  border-radius: 10px;
+  width: 310px;
+  padding: 2px 15px;
+}
+.initial_right {
+  width: 95%;
+  border: 1.5px solid #333;
+  border-radius: 30px;
+  margin: 20px 10px;
+}
+
+.initial_right > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* アクセス SP*/
+#access-information {
+  width: 100%;
+  background-color: rgba(220, 250, 211, 0.932);
+  margin-top: 20px;
+}
+
+#access-information > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.vision {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.vision > tbody > tr > th {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgb(70, 2, 2);
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.vision > tbody > tr > td {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+#feature-1 {
+  width: 100%;
+  display: flex;
+}
+
+.feature-content {
+  width: 50%;
+}
+
+#feature-1 > img {
+  width: 40%;
+}
+
+#access {
+  width: 100%;
+  margin: 15px 0 20px 0;
+}
+
+#access iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.access-way_1 {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 100px;
+  margin: 20px 0 0 40px;
+}
+
+.access-way_1 > img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.access-way_1 > div {
+  margin-left: 10px;
+  padding-top: 17px;
+}
+
+/* 広告 SP*/
+#banner {
+  width: 90%;
+  text-align: center;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+#banner img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 10px 40px;
+}
+
+
+
+/* フッター SP*/
+.footer-logo {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 15px;
+  text-align: center;
+  color: rgb(55, 180, 61);
+}
+
+.copyright {
+  text-align: right;
+  font-size: 12px;
+}
+
+/* introduction.html SP */
+/* クリニックについて */
+.submain-image {
+  display: flex;
+  position: relative;
+  height: 232px;
+  z-index: 1;
+}
+
+.submain-image > p {
+  display: none;
+}
+
+.submain-image > h1 {
+  top: 80px;
+  left: 32px;
+  color: #ffffff;
+  font-size: 35px;
+  position: absolute;
+  z-index: 2;
+
+}
+
+.submain-image > img {
+  width: 100%;
+  right: 0px;
+  height: 230px;
+  position: absolute;
+}
+
+/* クリニック概要 SP*/
+#outline {
+ width: 100%;
+ margin: auto;
+}
+
+.outline_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.outline_img img {
+  width: 90%;
+  height: 300px;
+  border-radius: 30px;
+  margin: 0 auto 20px auto;
+}
+
+#outline {
+  width: 100%;
+  margin: auto;
+}
+
+.outline_table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.outline_table > tbody > tr > th {
+  width: 100px;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(70, 2, 2);
+  text-align: center;
+  height: 60px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.outline_table > tbody > tr > td {
+  padding: 12px 20px;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  height: 60px;
+}
+
+/* 院長紹介 SP*/
+#docter-file {
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+.docter-img {
+  display: block;
+  width: 90%;
+  box-shadow: 10px 10px 0 rgb(182, 182, 182);
+  margin: 0px auto 25px auto;
+}
+
+.docter-name {
+  margin: 40px 0 0 20px;
+  font-size: 21px;
+}
+
+.docter-birth {
+  margin: 15px 0 30px 40px;
+}
+
+.docter-from {
+  margin-left: 30px;
+}
+
+.docter-message {
+  margin: 0 20px;
+}
+/* 経歴・専門医・所属学会 SP*/
+#career {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+  background-color: rgba(220, 250, 211, 0.932);
+}
+
+.career-h3 {
+  margin-top: 24px;
+}
+
+.career-left {
+  width: 90%;
+  margin-left: 40px;
+}
+
+.career-right {
+  width: 90%;
+  margin-left: 40px;
+}
+
+.career-dl > dt {
+  float: left;
+}
+
+.career-dl > dd {
+  margin-left: 100px;
+}
+
+/* クリニックの特徴 SP*/
+
+#feature > div {
+  width: 100%;
+  margin: auto;
+}
+
+.feature_left {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.feature_right {
+  width: 100%;
+  padding-top: 20px;
+  background-color: rgba(220, 250, 211, 0.932);
+}
+
+.feature-img-left {
+  width: 250px;
+  height: 250px;
+  border-radius: 120px;
+  box-shadow: 0 0 10px #333;
+  margin: 20px auto 0 auto;
+  display: block;
+}
+
+.feature-number {
+  display: block;
+  font-size: 36px;
+  color: rgb(108, 199, 112);
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.feature-h3 {
+  font-size: 21px;
+  margin: 0 20px 10px 20px;
+}
+
+.feature-p {
+  margin: 0 20px;
+}
+
+.feature-img-right {
+  width: 250px;
+  height: 250px;
+  border-radius: 120px;
+  box-shadow: 0 0 10px #333;
+  margin: 20px auto 0 auto;
+  display: block;
+}
+
+/* 求人案内 SP*/
+.recruit-form {
+  width: 90%;
+  margin: auto;
+  background-color: rgba(220, 250, 211, 0.932);
+  border-radius: 20px;
+}
+
+.recruit-form > p {
+  font-size: 18px;
+  padding: 30px;
+}
+
+.contact {
+  width: 90%;
+  height: 150px;
+  margin: 30px auto 50px auto;
+  line-height: 2;
+}
+
+.contact h4 {
+  font-size: 18px;
+  padding:0 5px;
+}
+
+.contact p {
+  padding: 0 20px 0 20px;
+}
+
+.contact-tel {
+  font-weight: bold;
+}
+
+/* おしらせ SP*/
+/* お知らせページ */
+#main_infomation {
+  width: 90%;
+  margin: 0 auto 100px auto;
+  position: relative;
+}
+
+.infomation_main {
+  margin-top: 50px;
+}
+.infomation_main p {
+ display: inline-block;
+}
+
+.infomation_category {
+  width: 80px;
+  background-color: rgb(141, 233, 146);
+  margin: 15px;
+  border-radius: 10px;
+  text-align: justify;
+  text-align-last: justify;
+  padding: 5px 10px;
+}
+
+.infomation_title {
+  font-size: 28px;
+  margin: 0 0 30px 0;
+}
+
+#main_infomation > p {
+  padding: 0 15px;
+}
+
+#main_infomation  img {
+  width: 60px;
+  height: 60px;
+}
+
+.font_weight {
+  font-weight: bold;
+}
+
+/* contact_20191223.html */
+.information_ol {
+  margin: 0;
+  padding: 0 20px 0 50px;
+}
+
+/* お知らせへ戻る */
+.information_link {
+  display: inline-block;
+   position: absolute;
+   width: 160px;
+   height: 35px;
+   background-color: rgb(154, 151, 151);
+   color: #ffffff;
+   border: 2px double rgb(70, 2, 2);
+   border-radius: 5px;
+   text-align: center;
+   margin-top: 30px;
+   padding-top: 12px;
+   right: 0;
+}
+/* お知らせ・防災情報のリンク */
+.record_link {
+  display: block;
+  margin: 30px 0 0 20px;
+}
+}
