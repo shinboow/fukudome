@@ -924,6 +924,52 @@ header {
   width: 30px;
   height: 30px;
 }
+
+/* LINE公式アカウントページ */
+.line_title {
+  margin-top: 40px;
+}
+
+.line_p {
+  text-align: center;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.line_img {
+  display: block;
+  width: 35%;
+  margin: auto;
+}
+
+/* 患者連絡カード */
+.card_1 img {
+  width: 100%;
+}
+
+.card_1 {
+  width: 100%;
+  height: 520px;
+}
+
+.card_1 > p {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 5px 0;
+}
+.card_2 > p {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 5px 0;
+}
+
+.card_2 img {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
 /* お知らせページ */
 #main_infomation {
   width: 65%;
@@ -966,11 +1012,6 @@ header {
 
 #main_infomation > p {
   padding: 0 50px;
-}
-
-#main_infomation  img {
-  width: 60px;
-  height: 60px;
 }
 
 .information_link {
@@ -1056,7 +1097,7 @@ header {
   
   /* SP用ナビゲーションの切り替え SP*/
   h2 {
-    padding: 20px 20px 10px 20px;
+    padding: 20px 0 10px 0;
   }
 
   #nav-sp {
@@ -1717,16 +1758,10 @@ header {
 
 .infomation_title {
   font-size: 28px;
-  margin: 0 0 30px 0;
 }
 
 #main_infomation > p {
   padding: 0 15px;
-}
-
-#main_infomation  img {
-  width: 60px;
-  height: 60px;
 }
 
 .font_weight {
@@ -1758,5 +1793,128 @@ header {
 .record_link {
   display: block;
   margin: 30px 0 0 20px;
+}
+
+/* 防災情報 */
+#disaster_page {
+  display: block;
+  margin: 30px 0px;
+  width: 100%;
+}
+#disaster {
+  width: 80%;
+  padding: 0 20px 30px 20px;
+  background-color: rgb(100, 128, 248);
+  border-radius: 30px;
+  margin: 30px auto 10px auto;
+  color: #ffffff;
+}
+
+.disaster-list {
+  list-style: none outside;
+  margin: auto;
+  padding: 0;
+}
+
+.disaster-item a {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding: 20px 20px;
+  background-color: #ffffff;
+}
+
+.disaster-item:first-child a {
+  border-top: 1px solid rgb(182, 182, 182);
+}
+
+.disaster-date {
+  margin: 0;
+  font-size: 16px;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+
+.disaster-item .disaster-category {
+  margin: 0 0 15px 0;
+  padding: 0 20px 0 0;
+}
+
+.disaster-item .disaster-category span {
+  background-color: #999;
+  width: 60px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.disaster-item .disaster-title {
+  margin: 0;
+  width: 100%;
+}
+
+.item a:hover .title {
+  color: rgb(55, 180, 61);
+}
+
+/* 災害時ツール */
+#disaster_tool {
+  width: 100%;
+  height: 400px;
+}
+
+.tool_vision th {
+  width: 30px;
+  height: 40px;
+  padding-right: 18px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.tool_h3 {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.disaster_img {
+  width: 30px;
+  height: 30px;
+}
+
+/* LINE公式アカウントページ */
+.line_title {
+  margin: 30px 0 20px 0;
+}
+
+.line_p {
+  text-align: center;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.line_img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+/* 患者連絡カード */
+.card_1 img {
+  width: 100%;
+}
+
+.card_1 p {
+  margin: 15px 0 5px 0;
+}
+
+.card_2 p {
+  margin: 15px 0 5px 0;
 }
 }
