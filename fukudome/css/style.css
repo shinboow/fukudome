@@ -53,6 +53,10 @@ iframe {
   width: 100%;
 }
 
+.weight {
+  font-weight: bold;
+}
+
 /* PC用のスタイル */
 @media print, screen and ( min-width: 768px) {
   
@@ -246,7 +250,7 @@ header {
 /* お知らせ */
 #information {
   width: 80%;
-  height: 480px;
+  height: 550px;
   padding: 0 50px;
   margin: auto;
   background-color: rgba(220, 250, 211, 0.932);
@@ -830,7 +834,7 @@ header {
 /* 防災情報 */
 #disaster_page {
   display: flex;
-  margin: 30px 0px;
+  height: 500px;
   width: 100%;
 }
 #disaster {
@@ -900,29 +904,55 @@ header {
   color: rgb(55, 180, 61);
 }
 
+/* 災害情報link */
+.disaster_link {
+  display: flex;
+  justify-content: center;
+}
+
+.disaster_link a {
+  font-size: 20px;
+  color: black;
+  margin: 30px 0 0 30px;
+}
+
+.disaster_link a:hover {
+  color: rgb(55, 180, 61);
+}
+
+.disaster_link img {
+  display: block;
+  width: 80px;
+}
+
 /* 災害時ツール */
 #disaster_tool {
   width: 30%;
-  margin: 30px;
+  margin: 20px;
   height: 400px;
 }
 
-.tool_vision th {
-  width: 30px;
-  height: 40px;
-  padding-right: 18px;
-  text-align: justify;
-  text-align-last: justify;
+#disaster_page a {
+  text-decoration: none;
+  color: black;
+}
+
+#disaster_tool a:hover {
+  color: rgb(108, 199, 112);
+}
+
+.tool_vision li {
+  width: 320px;
+  background-color: rgb(233, 232, 232);
+  margin: 0 0 5px 0;
+  padding: 10px 0 10px 25px;
+  list-style: none;
+  border-radius: 5px;
 }
 
 .tool_h3 {
   padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-.disaster_img {
-  width: 30px;
-  height: 30px;
+  margin-bottom: 10px;
 }
 
 /* LINE公式アカウントページ */
@@ -971,20 +1001,20 @@ header {
 }
 
 /* お知らせページ */
-#main_infomation {
+#main_information {
   width: 65%;
   margin: 0 auto 100px auto;
   position: relative;
 }
 
-.infomation_main {
+.information_main {
   margin-top: 50px;
 }
-.infomation_main p {
+.information_main p {
  display: inline-block;
 }
 
-.infomation_category {
+.information_category {
   width: 80px;
   background-color: rgb(141, 233, 146);
   margin: 15px;
@@ -994,7 +1024,7 @@ header {
   padding: 5px 10px;
 }
 
-.infomation_title {
+.information_title {
   font-size: 28px;
   margin: 0 0 30px 0;
   padding: 0 50px;
@@ -1010,7 +1040,7 @@ header {
   padding-left: 100px;
 }
 
-#main_infomation > p {
+#main_information > p {
   padding: 0 50px;
 }
 
@@ -1028,7 +1058,6 @@ header {
   margin-top: 30px;
   right: 0;
 }
-
 /* contact_20240710.html */
 .holiday-r6 {
   width: 45%;
@@ -1414,7 +1443,7 @@ header {
 
 .initial_left {
   width: 90%;
-  padding: 0 20px;
+  padding: 0 17px;
   line-height: 1.7;
 }
 
@@ -1495,7 +1524,7 @@ header {
   justify-content: center;
   width: 90%;
   height: 100px;
-  margin: 20px 0 0 40px;
+  margin: 20px 0 0 30px;
 }
 
 .access-way_1 > img {
@@ -1661,12 +1690,12 @@ header {
 
 .career-left {
   width: 90%;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .career-right {
   width: 90%;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .career-dl > dt {
@@ -1771,14 +1800,14 @@ header {
   position: relative;
 }
 
-.infomation_main {
+.information_main {
   margin-top: 50px;
 }
-.infomation_main p {
+.information_main p {
  display: inline-block;
 }
 
-.infomation_category {
+.information_category {
   width: 80px;
   background-color: rgb(141, 233, 146);
   margin: 15px;
@@ -1788,11 +1817,11 @@ header {
   padding: 5px 10px;
 }
 
-.infomation_title {
+.information_title {
   font-size: 28px;
 }
 
-#main_infomation > p {
+#main_information > p {
   padding: 0 15px;
 }
 
@@ -1862,16 +1891,41 @@ header {
    padding-top: 12px;
    right: 0;
 }
+
+.information_re {
+  width: 100%;
+  height: 100px;
+}
 /* お知らせ・防災情報のリンク sp*/
 .record_link {
   display: block;
   margin: 30px 0 0 20px;
 }
 
+/* 災害情報link sp */
+.disaster_link {
+  padding: 0 10px 0 10px;
+}
+
+.disaster_link a {
+  font-size: 20px;
+  color: black;
+  margin: 10px 0 0 27px;
+}
+
+.disaster_link a:hover {
+  color: rgb(55, 180, 61);
+}
+
+.disaster_link img {
+  display: block;
+  width: 80px;
+  margin: auto;
+}
+
 /* 防災情報 sp*/
 #disaster_page {
   display: block;
-  margin: 30px 0px;
   width: 100%;
 }
 #disaster {
@@ -1886,7 +1940,7 @@ header {
 .disaster-list {
   list-style: none outside;
   margin: auto;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .disaster-item a {
@@ -1895,7 +1949,7 @@ header {
   text-decoration: none;
   color: #333;
   border-bottom: 1px solid rgb(182, 182, 182);
-  padding: 20px 20px;
+  padding: 20px;
   background-color: #ffffff;
 }
 
@@ -1943,22 +1997,27 @@ header {
   height: 400px;
 }
 
-.tool_vision th {
-  width: 30px;
-  height: 40px;
-  padding-right: 18px;
-  text-align: justify;
-  text-align-last: justify;
+#disaster_page a {
+  text-decoration: none;
+  color: black;
+}
+
+.tool_vision ul {
+  padding: 0 20px 0 20px;
+}
+
+.tool_vision li {
+  width: 320px;
+  background-color: rgb(233, 232, 232);
+  margin: 0 0 5px 0;
+  padding: 10px 0 10px 25px;
+  list-style: none;
+  border-radius: 5px;
 }
 
 .tool_h3 {
   text-align: center;
-  margin: 20px 0 10px 0;
-}
-
-.disaster_img {
-  width: 30px;
-  height: 30px;
+  margin: 30px 0 10px 0;
 }
 
 /* LINE公式アカウントページ sp*/
