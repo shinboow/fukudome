@@ -68,6 +68,11 @@ body {
 header {
   background-color: #ffffff;
 }
+
+.spinline {
+  display: none;
+}
+
 #header-logo {
   position: relative;
   width: 100%;
@@ -956,10 +961,6 @@ header {
 }
 
 /* LINE公式アカウントページ */
-.line_title {
-  margin-top: 40px;
-}
-
 .line_p {
   text-align: center;
   font-weight: bold;
@@ -979,10 +980,11 @@ header {
 
 .card_1 {
   width: 100%;
-  height: 520px;
+  height: 100%;
+  margin: auto;
 }
 
-.card_1 > p {
+.card_1 p {
   font-size: 20px;
   text-align: center;
   margin: 20px 0 5px 0;
@@ -1026,7 +1028,7 @@ header {
 
 .information_title {
   font-size: 28px;
-  margin: 0 0 30px 0;
+  margin: 30px 0 30px 0;
   padding: 0 50px;
 }
 
@@ -1047,16 +1049,16 @@ header {
 .information_link {
   display: inline-block;
   position: absolute;
-  width: 160px;
-  height: 35px;
+  width: 170px;
+  height: 27px;
   background-color: rgb(154, 151, 151);
   color: #ffffff;
   border: 2px double rgb(70, 2, 2);
   border-radius: 5px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 5px;
   margin-top: 30px;
-  right: 0;
+  right: 65px;
 }
 /* contact_20240710.html */
 .holiday-r6 {
@@ -1104,6 +1106,15 @@ header {
   body {
     min-width: 375px;
     margin: 0;
+  }
+
+  section {
+    width: 90%;
+    margin: auto;
+  }
+
+  .spinline {
+    display: inline;
   }
 
   /* PCナビ非表示 SP*/
@@ -1818,7 +1829,9 @@ header {
 }
 
 .information_title {
-  font-size: 28px;
+  font-size: 24px;
+  margin: 30px 0;
+  padding: 0 ;
 }
 
 #main_information > p {
@@ -1881,15 +1894,15 @@ header {
   display: inline-block;
    position: absolute;
    width: 160px;
-   height: 35px;
+   height: 25px;
    background-color: rgb(154, 151, 151);
    color: #ffffff;
    border: 2px double rgb(70, 2, 2);
    border-radius: 5px;
    text-align: center;
    margin-top: 30px;
-   padding-top: 12px;
-   right: 0;
+   padding-top: 7px;
+   right: 20px;
 }
 
 .information_re {
@@ -1949,7 +1962,7 @@ header {
   text-decoration: none;
   color: #333;
   border-bottom: 1px solid rgb(182, 182, 182);
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff;
 }
 
