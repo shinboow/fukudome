@@ -255,7 +255,7 @@ header {
 /* お知らせ */
 #information {
   width: 80%;
-  height: 550px;
+  height: 480px;
   padding: 0 50px;
   margin: auto;
   background-color: rgba(220, 250, 211, 0.932);
@@ -1135,7 +1135,7 @@ header {
     position: absolute;
     top: 5px;
     right: 5px;
-    width: 9%;
+    width: 13%;
     z-index: 100;
   }
 
@@ -1162,7 +1162,7 @@ header {
 
   #close {
     position: absolute;
-    width: 7%;
+    width: 11%;
     top: 10px;
     right: 10px;
   }
@@ -1252,7 +1252,7 @@ header {
 
   /* お知らせ SP*/
   #information {
-    width: 80%;
+    width: 85%;
     padding: 0 20px 30px 20px;
     margin: 30px auto 10px auto;
     background-color: rgba(220, 250, 211, 0.932);
@@ -1918,12 +1918,13 @@ header {
 /* 災害情報link sp */
 .disaster_link {
   padding: 0 10px 0 10px;
+  text-align: center;
 }
 
 .disaster_link a {
   font-size: 20px;
   color: black;
-  margin: 10px 0 0 27px;
+  margin: 10px 0 0 15px;
 }
 
 .disaster_link a:hover {
@@ -1942,7 +1943,7 @@ header {
   width: 100%;
 }
 #disaster {
-  width: 80%;
+  width: 85%;
   padding: 0 20px 30px 20px;
   background-color: rgb(100, 128, 248);
   border-radius: 30px;
@@ -1953,7 +1954,7 @@ header {
 .disaster-list {
   list-style: none outside;
   margin: auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .disaster-item a {
@@ -2020,14 +2021,17 @@ header {
 }
 
 .tool_vision li {
-  width: 320px;
+  width: 100%;
   background-color: rgb(233, 232, 232);
   margin: 0 0 5px 0;
-  padding: 10px 0 10px 25px;
+  padding: 10px 0 10px 0;
   list-style: none;
   border-radius: 5px;
 }
 
+.tool_vision a {
+  padding-left: 20px;
+}
 .tool_h3 {
   text-align: center;
   margin: 30px 0 10px 0;
