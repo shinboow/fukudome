@@ -201,55 +201,41 @@ header {
   letter-spacing: 2px;
 }
 
-/* サブナビ */
-#nav-sub {
-  width: 900px;
-  margin: 10px auto;
-  padding-top: 10px;
-}
-
-#sub-nav {
+/* サブナビゲーション */
+.nav-sub-pc {
   text-align: center;
-  width: 760px;
-  margin: 0 auto;
-  font-size: 16px;
-  padding-bottom: 15px;
+  width: 1030px;
+  height: 100px;
+  margin: 35px auto;
   display: flex;
   justify-content: space-between;
 }
 
+.introduction_3 {
+  position: relative;
+  margin-left: 20px;
+}
+
 .introduction_3 img {
-  padding-top: 7px;
+  width: 220px;
+  height: 100px;
 }
 
-.disaster_1 img {
-  padding-top: 8px;
-  margin-bottom: 6px;
+.introduction_3 p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
 }
-
-.nav-sub-p_1 {
-  padding-left: 13px;
-}
-
 /* サブナビゲーションリンクの装飾 */
-#sub-nav > a {
-  text-decoration: none;
-  color: #333;
+.nav-sub-pc a {
+  background: #111;
 }
-
-#sub-nav > a:link {
-  color: #333;
-}
-
-#sub-nav > a:visited {
-  color: #333;
-}
-#sub-nav > a:hover {
-  color:rgb(55, 180, 61);
-}
-
-#sub-nav > a:active {
-  color: #333;
+.nav-sub-pc a img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 /* お知らせ */
@@ -607,20 +593,20 @@ header {
 .submain-image {
   display: flex;
   position: relative;
-  height: 355px;
+  height: 255px;
   z-index: 1;
 }
 
 .submain-image > p {
   color: #ffffff;
   position: absolute;
-  top: 200px;
+  top: 150px;
   left: 135px;
   z-index: 2;
 }
 
 .submain-image > h1 {
-  top: 130px;
+  top: 80px;
   left: 130px;
   color: #ffffff;
   font-size: 45px;
@@ -632,7 +618,7 @@ header {
 .submain-image > img {
   width: 100%;
   right: 0px;
-  height: 350px;
+  height: 250px;
   position: absolute;
 }
 /* クリニック概要 */
@@ -1122,6 +1108,10 @@ header {
     display: none;
   }
 
+  #nav-sub {
+    display: none;
+  }
+
   .header-right {
     display: none;
   }
@@ -1585,7 +1575,7 @@ header {
 .submain-image {
   display: flex;
   position: relative;
-  height: 232px;
+  height: 187px;
   z-index: 1;
 }
 
@@ -1594,7 +1584,7 @@ header {
 }
 
 .submain-image > h1 {
-  top: 80px;
+  top: 60px;
   left: 32px;
   color: #ffffff;
   font-size: 35px;
@@ -1606,7 +1596,7 @@ header {
 .submain-image > img {
   width: 100%;
   right: 0px;
-  height: 230px;
+  height: 180px;
   position: absolute;
 }
 
