@@ -60,10 +60,16 @@
         <img src="image/bousai_003.jpg" alt="水の画像">
     </div>
     <!-- 災害情報link -->
-    <div class="disaster_link">
-      <img src="/image/news.png" alt="newsとメガホンの写真">
-      <a href="https://www.nhk.or.jp/kishou-saigai/earthquake/">地震・台風情報</a>
-      <a href="https://bosai.pref.miyazaki.lg.jp/SaigaiTask/pub">宮崎県防災情報</a>
+    <div id="disaster_sub_nav">
+      <nav class="nav-sub-disaster">
+        <a href="https://www.nhk.or.jp/kishou-saigai/earthquake/" class="disaster_3"><img src="/image/nhk.jpg" alt="NHKのロゴ写真">
+        <p>地震・台風情報</p>
+        </a>
+        <a href="https://bosai.pref.miyazaki.lg.jp/SaigaiTask/pub" class="disaster_3"><img src="/image/aozora.jpg" alt="宮崎県のマーク写真">
+        <p>宮崎県防災情報</p>
+      </a>
+    </nav>
+  </div>
     </div>
 
     <div id="disaster_page">
@@ -102,19 +108,40 @@
       </section>
 
       <!-- 災害用ツール -->
+       <h2 class="tool_h2">透析患者様専用ページ</h2>
       <section id="disaster_tool">
-        <h3 class="tool_h3">災害用Tool（透析患者様用）</h3>
         <div class="tool_vision">
+          <p class="tool_p">tool</p>
           <ul>
             <li><a href="https://www.ntt-west.co.jp/dengon/">災害用伝言ダイアル（171）</a></li>
             <li><a href="https://www.ntt-west.co.jp/dengon/web171/">災害用伝言板（Web171）</a></li>
             <li><a href="https://www.saigai-touseki.net/">日本透析医会災害時情報ネットワーク</a></li>
             <li><a href="https://miyazaki-hd.com/registration/">宮崎県透析メール</a></li>
             <li><a href="/disaster_tool/account.html">LINE公式アカウント</a></li>
-            <li><a href="https://www.pref.miyazaki.lg.jp/documents/85053/85053_20240108162217-1.pdf">スモールカルテ</a></li>
+            <li><a href="/PDF/small.pdf">スモールカルテ</a></li>
             <li><a href="/disaster_tool/card.html">人工透析患者連絡カード</a></li>
           </ul>
         </div> 
+        <div class="disaster_tool_right">
+          <div class="disaster_manual">
+            <p class="tool_p">大規模災害時マニュアル</p>
+            <ul>
+              <li><a href="/PDF/daikibosaigai.pdf">透析患者編</a></li>
+            </ul>
+          </div>
+          <div class="handbook">
+            <p class="tool_p">防災ハンドブック</p>
+            <ul>
+              <li><a href="/PDF/handbook.pdf#page">防災ハンドブック（全編）</a></li>
+              <li><a href="/PDF/handbook_1.pdf">当院の災害対策</a></li>
+              <li><a href="/PDF/handbook_2.pdf">災害発生時の対応</a></li>
+              <li><a href="/PDF/handbook_3.pdf">災害時の連絡・情報伝達の方法</a></li>
+              <li><a href="/PDF/handbook_4.pdf">災害時の薬・食事の管理</a></li>
+              <li><a href="/PDF/handbook_5.pdf">被災生活中の合併症・感染予防策</a></li>
+              <li><a href="/PDF/handbook_6.pdf">災害時に持ち出すもの</a></li>
+            </ul>
+            </div>
+        </div>
       </section>
     </div>
 
