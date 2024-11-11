@@ -62,11 +62,11 @@ iframe {
 }
 
 /* PC用のスタイル */
-@media print, screen and ( min-width: 768px) {
+@media print, screen and ( min-width: 960px) {
   
 body {
   max-width: 1500px;
-  min-width: 1230px;
+  min-width: 1070px;
   margin: 0 auto 0 auto;
 }
 header {
@@ -515,8 +515,7 @@ header {
 
 .infomation-cl {
   display: flex;
-  margin: auto;
-  width: 1110px;
+  justify-content: center;
   margin-top: 5px;
 }
 
@@ -552,7 +551,7 @@ header {
 
 /* アクセス */
 #access {
-  width: 100%;
+  width: 45%;
   margin-top: 30px;
 }
 
@@ -1171,7 +1170,7 @@ header {
 
 /* SP用スタイル */
 /* トップページ */
-@media print, screen and (max-width:767px) {
+@media print, screen and (max-width:959px) {
   body {
     min-width: 375px;
     margin: 0;
@@ -1956,7 +1955,7 @@ header {
 
 /* contact_20240710.html */
 .holiday-r6 {
-  width: 90%;
+  width: 300px;
   margin: 30px auto 20px auto;
 }
 
@@ -2014,7 +2013,7 @@ header {
   height: 100px;
   margin: 35px auto 27px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .disaster_3 {
@@ -2024,6 +2023,7 @@ header {
 .disaster_3 img {
   width: 170px;
   height: 100px;
+  margin: 0 8px;
 }
 
 .disaster_3 p {
