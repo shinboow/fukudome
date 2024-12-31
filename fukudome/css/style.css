@@ -844,7 +844,7 @@ header {
 
 /* 防災情報 */
 #disaster_page {
-  height: 1050px;
+  height: 1150px;
   width: 100%;
 }
 #disaster {
@@ -859,8 +859,10 @@ header {
 
 .disaster-list {
   list-style: none outside;
+  height: 260px;
   margin: auto;
   padding: 0;
+  overflow-y: scroll;
 }
 
 .disaster-item a {
@@ -959,7 +961,7 @@ header {
   flex-direction: row-reverse;
   width: 100%;
   margin: 0;
-  height: 500px;
+  height: 520px;
 }
 
 #disaster_page a {
@@ -971,10 +973,9 @@ header {
   color: rgb(108, 199, 112);
 }
 
-.tool_vision {
+.disaster_tool_left{
   width: 40%;
 }
-
 .tool_vision ul {
   padding-left: 100px;
 }
@@ -1011,17 +1012,38 @@ header {
 }
 .disaster_manual ul {
   padding-left: 100px;
+  margin: 16px 0;
+}
+
+.disaster_manual li{
+  width: 320px;
+  margin: 0 0 5px 0;
+  padding: 10px 0 10px 5px;
 }
 
 .handbook {
   width: 100%;
-  height: 500px;
+  height: 430px;
 }
 
 .handbook ul {
   padding-left: 100px;
 }
 .handbook li {
+  width: 320px;
+  margin: 0 0 5px 0;
+  padding: 10px 0 10px 5px;
+}
+
+.disaster_material {
+  height: 130px;
+}
+.disaster_material ul{
+  padding-left: 100px;
+  margin: 16px 0;
+}
+
+.disaster_material li{
   width: 320px;
   margin: 0 0 5px 0;
   padding: 10px 0 10px 5px;
@@ -2039,7 +2061,7 @@ header {
 #disaster_page {
   display: block;
   width: 100%;
-  height: 1550px;
+  height: 1640px;
 }
 #disaster {
   width: 85%;
@@ -2052,8 +2074,10 @@ header {
 
 .disaster-list {
   list-style: none outside;
+  height: 350px;
   margin: auto;
   padding: 0;
+  overflow-y: scroll;
 }
 
 .disaster-item a {
@@ -2127,7 +2151,7 @@ header {
 }
 
 .tool_vision ul {
-  padding: 0 50px 0 50px;
+  padding-left: 50px;
 }
 
 .tool_vision li {
@@ -2142,7 +2166,7 @@ header {
 }
 
 .disaster_manual ul {
-  padding: 0 50px 0 50px;
+  padding-left: 50px;
 }
 
 .disaster_manual li {
@@ -2157,10 +2181,25 @@ header {
 }
 
 .handbook ul {
-  padding: 0 50px 0 50px;
+  padding-left: 50px;
 }
 
 .handbook li {
+  width: 100%;
+  margin: 0 0 5px 0;
+  padding: 10px 0 10px 0;
+}
+
+.disaster_material {
+  width: 100%;
+  height: 120px;
+}
+
+.disaster_material ul{
+  padding-left: 50px;
+}
+
+.disaster_material li{
   width: 100%;
   margin: 0 0 5px 0;
   padding: 10px 0 10px 0;
