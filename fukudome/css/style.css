@@ -210,7 +210,7 @@ header {
   text-align: center;
   width: 1030px;
   height: 100px;
-  margin: 35px auto;
+  margin: 50px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -844,7 +844,7 @@ header {
 
 /* 防災情報 */
 #disaster_page {
-  height: 1150px;
+  height: 1200px;
   width: 100%;
 }
 #disaster {
@@ -961,7 +961,6 @@ header {
   flex-direction: row-reverse;
   width: 100%;
   margin: 0;
-  height: 520px;
 }
 
 #disaster_page a {
@@ -1002,13 +1001,11 @@ header {
 
 .disaster_tool_right {
   width: 40%;
-  height: 500px;
   margin-right: 50px;
 }
 
 .disaster_manual {
   width: 100%;
-  height: 130px;
 }
 .disaster_manual ul {
   padding-left: 100px;
@@ -2061,7 +2058,7 @@ header {
 #disaster_page {
   display: block;
   width: 100%;
-  height: 1640px;
+  height: 1680px;
 }
 #disaster {
   width: 85%;
@@ -2162,7 +2159,6 @@ header {
 
 .disaster_manual {
   width: 100%;
-  height: 120px;
 }
 
 .disaster_manual ul {
