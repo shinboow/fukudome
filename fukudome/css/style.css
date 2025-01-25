@@ -73,6 +73,9 @@ header {
   background-color: #ffffff;
 }
 
+.img-sp {
+  display: none;
+}
 .spinline {
   display: none;
 }
@@ -248,8 +251,7 @@ header {
 /* お知らせ */
 #information {
   width: 80%;
-  height: 430px;
-  padding: 0 50px;
+  padding: 0 50px 10px 50px;
   margin: auto;
   background-color: rgba(220, 250, 211, 0.932);
   border-radius: 30px;
@@ -263,14 +265,6 @@ header {
 }
 
 .news-list {
-  list-style: none outside;
-  margin: auto;
-  padding: 0;
-  height: 95px;
-  overflow-y: scroll;
-}
-
-.news-list-2 {
   list-style: none outside;
   margin: auto;
   padding: 0;
@@ -327,6 +321,32 @@ header {
 
 .item a:hover .title {
   color: rgb(55, 180, 61);
+}
+
+.information_container {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 40px auto;
+}
+
+.information_container img {
+  width: 100%;
+}
+
+.information_container a {
+  width: 23%;
+  margin: 5px;
+  text-decoration: none;
+  color: #111;
+}
+
+.information_container p :hover {
+  color: #999;
+}
+
+.information_container p {
+  margin: 20px 0 20px 10px;
+  border-bottom: 2px double rgb(154, 151, 151);
 }
 
 /* 診療案内 */
@@ -1298,6 +1318,10 @@ header {
     margin: auto;
   }
 
+  .img-pc {
+    display: none;
+  }
+
   .spinline {
     display: inline;
   }
@@ -1454,7 +1478,7 @@ header {
   .news-list {
     list-style: none outside;
     margin: auto;
-    height: 230px;
+    height: 365px;
     overflow-y: scroll;
     padding: 0;
   }
@@ -1462,14 +1486,6 @@ header {
     list-style: none outside;
     margin: auto;
     padding: 0;
-  }
-
-  .news-list-2 {
-    list-style: none outside;
-    margin: auto;
-    padding: 0;
-    height: 230px;
-    overflow-y: scroll;
   }
 
   .item a {
@@ -1518,6 +1534,29 @@ header {
   
   .item a:hover .title {
     color: rgb(55, 180, 61);
+  }
+
+  .information_container {
+    margin-top: 20px;
+  }
+
+  .information_container a {
+    width: 100%;
+    color: #111;
+    text-decoration: none;
+    margin: auto;
+  }
+
+  .information_container img {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    border-bottom: 0.2rem dotted rgb(154, 151, 151);
+  }
+
+  .information_container p {
+    margin: 0 0 15px 10px;
+    border-bottom: 2px solid rgb(154, 151, 151);
   }
 
   /* 診療案内 SP*/
@@ -2141,6 +2180,7 @@ header {
   width: 170px;
   height: 100px;
   margin: 0 8px;
+  border-radius: 5px;
 }
 
 .disaster_3 p {
