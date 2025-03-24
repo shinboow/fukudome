@@ -8,6 +8,7 @@ body {
   position: relative;
   height: auto !important;
   min-height: 100%;
+  max-width: 2500px;
 }
 
 article {
@@ -61,11 +62,86 @@ iframe {
   margin-left: 15px;
 }
 
+.space_20 {
+  margin-left: 20px;
+}
+
+.space_40 {
+  margin-left: 40px;
+}
+/* トップへ戻る */
+.top-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fecb6e;
+}
+.yajirushi::before,
+.yajirushi::after {
+  content: '';
+  width: 25px;
+  height: 6px;
+  background-color: snow;
+  position: absolute;
+  border-radius: 3px;
+}
+.yajirushi::before {
+  transform: translate(25px, 25px) rotate(45deg);
+}
+.yajirushi::after {
+  transform: translate(10px, 25px) rotate(-45deg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: auto;
+}
+@keyframes progress {
+  0% {
+    bottom: -120px;
+  }
+  40% {
+    bottom: -120px;
+  }
+  45% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+.move-page-top {
+  position: fixed;
+  right: 20px;
+  bottom: -120px;
+  animation: progress linear;
+  animation-timeline: scroll();
+  transition: bottom 1s ease;
+  z-index: 2;
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* PC用のスタイル */
 @media print, screen and ( min-width: 960px) {
   
 body {
-  max-width: 1500px;
   min-width: 1070px;
   margin: 0 auto 0 auto;
 }
@@ -82,9 +158,9 @@ header {
 
 #header-logo {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 88px;
-
+  margin: auto;
 }
 
 #logo img {
@@ -166,12 +242,11 @@ header {
 #main-visual {
   width: 100%;
   position: relative;
-  height: 700px;
 }
 
 #main-visual img {
   width: 100%;
-  height: 700px;
+  height: 830px;
 }
 
 #main-message {
@@ -209,9 +284,13 @@ header {
 }
 
 /* サブナビゲーション */
+#nav-sub {
+  width: 87%;
+  margin: auto;
+  max-width: 1500px;
+}
+
 .nav-sub-pc {
-  text-align: center;
-  width: 1030px;
   height: 100px;
   margin: 50px auto;
   display: flex;
@@ -220,7 +299,6 @@ header {
 
 .introduction_3 {
   position: relative;
-  margin-left: 20px;
 }
 
 .introduction_3 img {
@@ -251,6 +329,7 @@ header {
 /* お知らせ */
 #information {
   width: 80%;
+  max-width: 1400px;
   padding: 0 50px 10px 50px;
   margin: auto;
   background-color: rgba(220, 250, 211, 0.932);
@@ -530,7 +609,7 @@ header {
 
 /* 医院概要 */
 #access-information {
-  width: 90%;
+  width: 100%;
   height: 550px;
   background-color: rgba(220, 250, 211, 0.932);
   margin: 40px auto 0 auto;
@@ -539,7 +618,8 @@ header {
 .infomation-cl {
   display: flex;
   justify-content: center;
-  margin-top: 5px;
+  margin: 20px auto;
+  width: 90%;
 }
 
 .vision {
@@ -833,6 +913,7 @@ header {
 /* 求人案内ページ */
 .recruit-form {
   width: 90%;
+  max-width: 1300px;
   height: 200px;
   margin: auto;
   background-color: rgba(220, 250, 211, 0.932);
@@ -847,6 +928,7 @@ header {
 
 .contact {
   width: 90%;
+  max-width: 1300px;
   height: 150px;
   margin: 30px auto 50px auto;
   line-height: 2;
@@ -867,10 +949,11 @@ header {
 
 /* 防災情報 */
 #disaster_page {
-  width: 100%;
+  width: 83%;
+  max-width: 1500px;
+  margin: auto;
 }
 #disaster {
-  width: 80%;
   height: 370px;
   padding: 0 20px;
   background-color: rgb(100, 128, 248);
@@ -949,6 +1032,7 @@ header {
   display: flex;
   justify-content: center;
   width: 83%;
+  max-width: 1500px;
   min-width: 1000px;
   margin: 50px auto 20px auto;
   position: relative;
@@ -1030,6 +1114,7 @@ header {
 }
 
 .disaster_tool_left {
+  width: 40%;
   margin-right: 40px;
 }
 
@@ -1154,6 +1239,17 @@ header {
   display: block;
   width: 50%;
   margin: auto;
+}
+
+/* 透析メール登録法 */
+.hd_mail {
+  display: flex;
+  margin-top: 50px;
+}
+
+.mail_left {
+  width: 75%;
+  margin-right: 40px;
 }
 
 /* お知らせページ */
@@ -2240,19 +2336,47 @@ header {
 .ikai_disaster {
   position: absolute;
   right: 0px;
-  top: 47px;
+  top: 40px;
+}
+
+.ikai_disaster ul {
+  margin-right: auto;
 }
 
 .ikai_disaster li {
   list-style: none;
   color: #ffffff;
-  width: 230px;
   background-color: rgb(108, 199, 112);
   margin: 0 8px 2px 0;
   border-radius: 8px 0 0 8px;
   height: 30px;
   padding-top: 5px;
   border: 0.1rem solid #ffffff;
+}
+
+.ikai_net {
+  width: 300px;
+}
+
+.ikai_simulation {
+  width: 250px;
+  position: absolute;
+  top: 55px;
+  right: 0px;
+}
+
+.ikai_mail {
+  width: 200px;
+  position: absolute;
+  top: 95px;
+  right: 0px;
+}
+
+.ikai_manual {
+  width: 150px;
+  position: absolute;
+  top: 135px;
+  right: 0px;
 }
 
 .ikai_disaster a {
@@ -2468,5 +2592,20 @@ header {
 
 .card_2 p {
   margin: 15px 0 5px 0;
+}
+
+.hd_mail {
+  margin-top: 30px;
+}
+
+/* 透析メール登録法SP */
+.space_20sp {
+  margin-left: 20px;
+}
+
+.mail_right img {
+  width: 50%;
+  max-width: 200px;
+  margin-top: 20px;
 }
 }
