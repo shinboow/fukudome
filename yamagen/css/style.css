@@ -1,10 +1,19 @@
 body {
+  font-family: serif;
   height: 100%;
 }
 
 #main_container {
+  position: relative;
   display: flex;
   width: 100%;
+}
+
+.concept {
+  position: absolute;
+  font-size: 40px;
+  padding-left: 50px;
+  color: black;
 }
 
 #main_container > img{
@@ -42,27 +51,28 @@ header > img {
 }
 
 /* 事業内容 */
-#services {
+.services {
   width: 100%;
   margin-top: 80px;
   background-color: rgb(233, 232, 232);
+  padding-bottom: 45px;
 }
 
-#services img {
+.services img {
   width: 300px;
 }
 
 .services_explain {
   position: relative;
   padding: 0 60px;
-  width: 450px;
+  width: 600px;
   background-color: rgb(248, 245, 245);
 }
 
 .detail_link {
   position: absolute;
   bottom: 35px;
-  right: 60px;
+  right: 136px;
   padding: 15px 20px;
   border-radius: 5px;
   background-color: rgb(88, 88, 88);
@@ -71,6 +81,7 @@ header > img {
 
 .detail_link_desmantle {
   position: absolute;
+  left: 130px;
   bottom: 35px;
   padding: 17px 20px;
   border-radius: 5px;
@@ -107,7 +118,7 @@ header > img {
 .agriculture {
   display: flex;
   justify-content: center;
-  margin: 50px auto;
+  margin: 50px auto 0px auto;
 }
 
 
