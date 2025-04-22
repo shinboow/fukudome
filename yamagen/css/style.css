@@ -43,6 +43,7 @@ header > img {
   width: 150px;
   margin: 60px auto 0px auto;
   color: #ffffff;
+  font-size: 20px;
 }
 
 .nav_pc li {
@@ -169,5 +170,49 @@ header > img {
 }
 
 /* フッター */
+footer {
+  display: flex;
+  background-color: black;
+  color: #ffffff;
+  margin-top: 50px;
+  padding: 30px 30px 0px 30px;
+}
 
+.footer_left {
+  margin: auto;
+}
 
+.footer_left p {
+  margin: 5px 0 ;
+}
+
+.footer_right {
+  margin: auto;
+}
+
+.footer_left img{
+  display: inline-block;
+  width: 100px;
+}
+
+.copyright {
+  background-color: black;
+  margin: 0;
+  color: #ffffff;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* 会社情報*/
+#sub_container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.company_profile {
+  position: absolute;
+  font-size: 40px;
+  padding-left: 50px;
+  color: black;
+}
