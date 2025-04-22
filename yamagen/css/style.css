@@ -23,7 +23,8 @@ body {
 .headline_2 {
   font-size: 35px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
+  margin: 0px auto 50px auto;
 }
 
 /* ヘッダー・ナビ */
@@ -121,4 +122,49 @@ header > img {
   margin: 50px auto 0px auto;
 }
 
+/* 会社情報 */
+.corporation {
+  position: relative;
+}
+.corporation img {
+  width: 60%;
+  height: 480px;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+}
+
+.corporation_comment {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  font-size: 18px;
+  top: 170px;
+  right: 0;
+}
+
+.corporation_link_overview{
+  position: absolute;
+  width: 170px;
+  right: 40px;
+  bottom: -140px;
+  padding: 17px 20px;
+  border-bottom: 2px solid rgb(88, 88, 88);
+}
+
+.corporation_link_greeting{
+  position: absolute;
+  width: 170px;
+  right: 40px;
+  bottom: -210px;
+  padding: 17px 20px;
+  border-bottom: 2px solid rgb(88, 88, 88);
+}
+
+.contact {
+  position: absolute;
+  width: 170px;
+  right: 40px;
+  bottom: -280px;
+  padding: 17px 20px;
+  border-bottom: 2px solid rgb(88, 88, 88);
+}
 
