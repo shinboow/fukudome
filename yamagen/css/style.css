@@ -43,6 +43,11 @@ a {
 .space_20 {
   margin-left: 20px;
 }
+
+.space_80 {
+  margin-left: 80px;
+}
+
 /* ヘッダー・ナビ */
 header {
   width: 25%;
@@ -55,6 +60,11 @@ header  img {
   display: block;
 }
 
+.header_sub img {
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
 .nav_pc {
   width: 180px;
   margin: 20px auto 0px auto;
@@ -63,7 +73,7 @@ header  img {
 }
 
 .nav_pc a {
-  display: inline-block;
+  display: block;
   list-style: none;
   margin-top: 20px;
   letter-spacing: 2px;
@@ -75,6 +85,31 @@ header  img {
 }
 
 /* 事業内容 */
+.text_appear {
+  width: 410px;
+  font-size: 40px;
+}
+.appear_container {
+  display: flex;
+  justify-content: center;
+  height: 220px;
+  margin: 20px auto 0 auto;
+}
+
+.appear_container_1 {
+  margin-top: 160px;
+}
+.headline_1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.headline_1_sub {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
 .services {
   width: 100%;
   margin-top: 80px;
@@ -93,10 +128,6 @@ header  img {
   background-color: rgb(248, 245, 245);
 }
 
-.services a {
-  color: #ffffff;
-}
-
 .detail_link {
   position: absolute;
   bottom: 35px;
@@ -109,9 +140,9 @@ header  img {
 
 .detail_link_desmantle {
   position: absolute;
-  left: 130px;
+  left: 132px;
   bottom: 35px;
-  padding: 17px 20px;
+  padding: 15px 20px;
   border-radius: 5px;
   background-color: rgb(88, 88, 88);
   color: #ffffff;
@@ -271,13 +302,13 @@ footer {
 }
 
 /* 事業内容*/
-#container_sub {
+.container_sub {
   position: relative;
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-image: url(/img/24ai1104_016_TP_V.jpg);
   width: 100%;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .type {
@@ -302,32 +333,40 @@ footer {
   color: #ffffff;
 }
 
-.nav_sub p {
+.nav_sub > a {
   display: block;
-  width: 100px;
   border-left: 3px double rgb(179, 179, 179);
   margin: 0 20px 45px 0;
   padding-left: 15px;
+  color: #ffffff;
 }
 
-.header_sub > img {
+.nav_sub > a:hover {
+  color: blueviolet;
+}
+
+.header_sub img {
   width: 50%;
-  margin: 30px auto 0 auto;
+  margin: auto;
   display: block;
 }
 
 .nav_pc_sub {
-  width: 150px;
-  margin: 30px auto 0px auto;
-  padding-right: 10px;
-  color: #ffffff;
-  font-size: 18px;
+  width: 100px;
+  margin: 10px auto 0px auto;
+  padding-left: 30px;
 }
 
-.nav_pc_sub li {
-  list-style: none;
-  margin-top: 10px;
-  letter-spacing: 2px;
+.nav_pc_sub a {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.nav_pc_sub a:hover {
+  color: blueviolet;
 }
 
 /* 建築工事 */
@@ -399,7 +438,6 @@ footer {
   margin: 50px auto;
 }
 
-/* 代表あいさつ */
 .greeting img {
   width:400px;
 }
@@ -410,4 +448,5 @@ footer {
   padding: 0 0 0 40px;
 }
 
+/* 求人要項 */
 
