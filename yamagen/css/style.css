@@ -1,10 +1,12 @@
 body {
   font-family: serif;
   height: 100%;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
  a:hover {
@@ -48,6 +50,75 @@ a {
   margin-left: 80px;
 }
 
+/* トップへ戻る */
+.top-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fecb6e;
+}
+.yajirushi::before,
+.yajirushi::after {
+  content: '';
+  width: 25px;
+  height: 6px;
+  background-color: snow;
+  position: absolute;
+  border-radius: 3px;
+}
+.yajirushi::before {
+  transform: translate(25px, 25px) rotate(45deg);
+}
+.yajirushi::after {
+  transform: translate(10px, 25px) rotate(-45deg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: auto;
+}
+@keyframes progress {
+  0% {
+    bottom: -120px;
+  }
+  40% {
+    bottom: -120px;
+  }
+  45% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+.move-page-top {
+  position: fixed;
+  right: 20px;
+  bottom: -120px;
+  animation: progress linear;
+  animation-timeline: scroll();
+  transition: bottom 1s ease;
+  z-index: 2;
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* ヘッダー・ナビ */
 header {
   width: 25%;
@@ -68,19 +139,17 @@ header  img {
 .nav_pc {
   width: 180px;
   margin: 20px auto 0px auto;
-  padding-left: 93px;
   font-size: 20px;
 }
 
-.nav_pc a {
-  display: block;
-  list-style: none;
+.nav_pc li {
   margin-top: 20px;
   letter-spacing: 2px;
-  color: #ffffff;
 }
 
-.nav_pc > a:hover {
+
+
+.nav_pc li > a:hover {
   color: blueviolet;
 }
 
@@ -88,6 +157,7 @@ header  img {
 .text_appear {
   width: 410px;
   font-size: 40px;
+  white-space: nowrap;
 }
 .appear_container {
   display: flex;
@@ -118,7 +188,7 @@ header  img {
 }
 
 .services img {
-  width: 300px;
+  width: 350px;
 }
 
 .services_explain {
@@ -454,5 +524,13 @@ footer {
   padding: 0 0 0 40px;
 }
 
-/* 求人要項 */
+/* 問い合わせ */
+.access_tel p {
+  font-size: 30px;
+  margin-left: 300px;
+}
+
+.google_form {
+  margin: 40px 0 30px 280px;
+}
 
