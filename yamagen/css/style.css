@@ -145,6 +145,7 @@ header  img {
 .nav_pc li {
   margin-top: 20px;
   letter-spacing: 2px;
+  list-style: none;
 }
 
 
@@ -201,21 +202,32 @@ header  img {
 .detail_link {
   position: absolute;
   bottom: 35px;
-  right: 136px;
+  right: 130px;
   padding: 15px 20px;
   border-radius: 5px;
   background-color: rgb(88, 88, 88);
   color: #ffffff;
 }
 
+.detail_link:hover {
+  background: rgb(179, 179, 179);
+  color: black;
+}
+
+
 .detail_link_desmantle {
   position: absolute;
-  left: 132px;
+  left: 90px;
   bottom: 35px;
   padding: 15px 20px;
   border-radius: 5px;
   background-color: rgb(88, 88, 88);
   color: #ffffff;
+}
+
+.detail_link_desmantle:hover {
+  background: rgb(179, 179, 179);
+  color: black;
 }
 
 .services_number {
