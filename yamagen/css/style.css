@@ -295,6 +295,10 @@ header  img {
   border-bottom: 2px solid rgb(88, 88, 88);
 }
 
+.corporation_link_overview:hover {
+  font-size: 25px;
+}
+
 .corporation_link_greeting{
   position: absolute;
   width: 170px;
@@ -302,6 +306,10 @@ header  img {
   bottom: -210px;
   padding: 17px 20px;
   border-bottom: 2px solid rgb(88, 88, 88);
+}
+
+.corporation_link_greeting:hover {
+  font-size: 25px;
 }
 
 .map {
@@ -316,6 +324,10 @@ header  img {
   bottom: -280px;
   padding: 17px 20px;
   border-bottom: 2px solid rgb(88, 88, 88);
+}
+
+.contact_link:hover {
+  font-size: 25px;
 }
 
 /* 求人募集 */
